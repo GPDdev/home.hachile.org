@@ -1,505 +1,161 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="light">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#dff7f4">
-  <meta name="description" content="Gunpowder identity hub">
-  <title>Hachile Identity Hub</title>
-
-  <link rel="stylesheet" href="./assets/style.css">
-
-  <style>
-    :root {
-      --landing-bg-light:
-        radial-gradient(circle at 12% 12%, rgba(255,255,255,.95), transparent 24rem),
-        radial-gradient(circle at 85% 75%, rgba(120,220,215,.28), transparent 32rem),
-        linear-gradient(135deg, #e9fbf8 0%, #d9f5f1 45%, #c8eeeb 100%);
-
-      --landing-bg-dark:
-        radial-gradient(circle at 16% 20%, rgba(241,185,79,.12), transparent 28rem),
-        radial-gradient(circle at 85% 75%, rgba(139,237,235,.12), transparent 30rem),
-        #070910;
-    }
-
-    /* ===== Theme toggle ===== */
-    .theme-toggle {
-      position: fixed;
-      top: 18px;
-      right: 18px;
-      z-index: 100;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 13px;
-      border-radius: 999px;
-      border: 1px solid rgba(30, 60, 64, .16);
-      background: rgba(255,255,255,.74);
-      backdrop-filter: blur(16px);
-      box-shadow: 0 8px 26px rgba(34, 80, 80, .12);
-      color: #163136;
-      cursor: pointer;
-      font: inherit;
-      font-size: .86rem;
-      font-weight: 750;
-      transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
-    }
-
-    .theme-toggle:hover {
-      transform: translateY(-1px);
-    }
-
-    .theme-toggle .theme-icon {
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    /* ===== Light mode page ===== */
-    html[data-theme="light"] body.landing {
-      min-height: 100vh;
-      background: var(--landing-bg-light);
-      color: #122126;
-    }
-
-    html[data-theme="light"] .landing .kicker {
-      color: #557075;
-    }
-
-    html[data-theme="light"] .landing h1 {
-      color: #0d171b;
-    }
-
-    html[data-theme="light"] .landing .subtitle {
-      color: #5d7278;
-    }
-
-    html[data-theme="light"] .landing-footer {
-      color: #698086;
-    }
-
-    /* ===== Identity cards ALWAYS stay in dark style ===== */
-    .identity-card {
-      background: transparent;
-      border-color: var(--line);
-      box-shadow: var(--shadow);
-    }
-
-    .identity-card::before {
-      opacity: 1;
-      filter: none;
-    }
-
-    .identity-card::after {
-      background: linear-gradient(
-        to top,
-        rgba(4,7,13,.96) 3%,
-        rgba(4,7,13,.55) 52%,
-        rgba(4,7,13,.18)
-      );
-    }
-
-    .card-type {
-      color: var(--muted);
-    }
-
-    .card-content h2 {
-      color: #f6f8fc;
-    }
-
-    .card-content p {
-      color: #d5d9e3;
-    }
-
-    .enter {
-      border-top-color: rgba(255,255,255,.16);
-      color: #f6f8fc;
-    }
-
-    .human .enter strong {
-      color: var(--human);
-    }
-
-    .avatar {
-      border-color: rgba(255,255,255,.9);
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-      background: #fff;
-    }
-
-    /* ===== Gallery card: default/light ===== */
-    .gallery-card {
-      position: relative;
-      margin-top: 22px;
-      min-height: 138px;
-      padding: 26px 30px;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(20,55,58,.15);
-      background:
-        linear-gradient(115deg, rgba(255,255,255,.82), rgba(237,255,252,.68)),
-        rgba(255,255,255,.72);
-      box-shadow: 0 18px 48px rgba(45,94,94,.12);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 28px;
-      overflow: hidden;
-      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
-    }
-
-    .gallery-card::before {
-      content: "";
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      right: -80px;
-      top: -120px;
-      border-radius: 50%;
-      background: rgba(112,216,210,.22);
-      pointer-events: none;
-    }
-
-    .gallery-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(41,145,143,.38);
-      box-shadow: 0 26px 66px rgba(45,94,94,.18);
-    }
-
-    .gallery-left {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      min-width: 0;
-    }
-
-    .gallery-icon {
-      width: 72px;
-      height: 72px;
-      flex: 0 0 72px;
-      border-radius: 22px;
-      display: grid;
-      place-items: center;
-      background: #0f2024;
-      color: #b9f4ee;
-      font-size: 2rem;
-      box-shadow: 0 10px 28px rgba(19,48,52,.16);
-    }
-
-    .gallery-label {
-      display: block;
-      margin-bottom: 5px;
-      color: #688087;
-      font-size: .78rem;
-      font-weight: 800;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    .gallery-copy {
-      min-width: 0;
-    }
-
-    .gallery-copy h2 {
-      margin: 0 0 6px;
-      font-size: clamp(1.8rem,3vw,2.5rem);
-      letter-spacing: -.035em;
-      color: #102126;
-    }
-
-    .gallery-copy p {
-      margin: 0;
-      color: #60757b;
-      line-height: 1.6;
-      overflow-wrap: anywhere;
-    }
-
-    .gallery-enter {
-      position: relative;
-      z-index: 1;
-      flex: 0 0 auto;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 13px 18px;
-      border-radius: 999px;
-      background: #102126;
-      color: #d8fffb;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    /* ===== Dark mode page ===== */
-    html[data-theme="dark"] body.landing {
-      min-height: 100vh;
-      background: var(--landing-bg-dark);
-      color: #f6f8fc;
-    }
-
-    html[data-theme="dark"] .landing .kicker,
-    html[data-theme="dark"] .landing .subtitle {
-      color: #aab2c2;
-    }
-
-    html[data-theme="dark"] .landing h1 {
-      color: #f6f8fc;
-    }
-
-    html[data-theme="dark"] .landing-footer {
-      color: #747e90;
-    }
-
-    html[data-theme="dark"] .theme-toggle {
-      color: #f3f7fa;
-      border-color: rgba(255,255,255,.15);
-      background: rgba(9,12,20,.74);
-      box-shadow: 0 8px 26px rgba(0,0,0,.24);
-    }
-
-    html[data-theme="dark"] .gallery-card {
-      border-color: rgba(255,255,255,.10);
-      background:
-        linear-gradient(120deg, rgba(20,29,39,.92), rgba(9,15,23,.92)),
-        rgba(10,15,23,.94);
-      box-shadow: 0 22px 65px rgba(0,0,0,.28);
-    }
-
-    html[data-theme="dark"] .gallery-card::before {
-      background: rgba(92,206,201,.11);
-    }
-
-    html[data-theme="dark"] .gallery-label {
-      color: #8da0a7;
-    }
-
-    html[data-theme="dark"] .gallery-copy h2 {
-      color: #f4f8fa;
-    }
-
-    html[data-theme="dark"] .gallery-copy p {
-      color: #aebac1;
-    }
-
-    html[data-theme="dark"] .gallery-icon {
-      background: #dff9f6;
-      color: #102126;
-    }
-
-    html[data-theme="dark"] .gallery-enter {
-      background: #d9f7f4;
-      color: #102126;
-    }
-
-    @media (max-width: 800px) {
-      .theme-toggle {
-        top: 12px;
-        right: 12px;
-        padding: 8px 11px;
-        font-size: .8rem;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .gallery-card {
-        padding: 22px;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 18px;
-      }
-
-      .gallery-left {
-        align-items: flex-start;
-      }
-
-      .gallery-icon {
-        width: 62px;
-        height: 62px;
-        flex-basis: 62px;
-        border-radius: 19px;
-      }
-
-      .gallery-enter {
-        align-self: stretch;
-        justify-content: space-between;
-      }
-
-      .theme-toggle .theme-label {
-        display: none;
-      }
-    }
-  </style>
-
-  <script>
-    (function () {
-      const saved = localStorage.getItem('hachile-theme');
-      const preferredDark = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-      const theme = saved || (preferredDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
-    })();
-  </script>
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Gunpowder 的个人主页：介绍、网站、推荐资源、社群、联系方式与讨论区。">
+  <title>Gunpowder · Hachile Home</title>
+  <link rel="stylesheet" href="./assets/home.css">
 </head>
+<body>
+  <button class="menu-button" id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">☰ <span>目录</span></button>
+  <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="站点目录">
+    <div class="sidebar-inner">
+      <a class="brand" href="#top"><span class="brand-mark">H<span>.</span></span><span><strong>Hachile Home</strong><small>Gunpowder 的个人空间</small></span></a>
+      <p class="sidebar-label">导航 / CONTENTS</p>
+      <nav class="side-nav" aria-label="主导航">
+        <a class="nav-root" href="#top"><span>⌂</span>概览</a>
+        <details open><summary><span>01</span>自我介绍</summary><div><a href="#about">关于我</a><a href="#interests">兴趣与方向</a></div></details>
+        <details open><summary><span>02</span>我的常用网站</summary><div><a href="#my-sites">个人站点</a><a href="#my-projects">社群与工具</a></div></details>
+        <details><summary><span>03</span>我推荐的网站</summary><div><a href="#recommend-study">校园与学习</a><a href="#recommend-tools">效率工具</a><a href="#recommend-explore">出行与网络</a></div></details>
+        <details><summary><span>04</span>我建的群</summary><div><a href="#groups-school">校园与兴趣</a><a href="#groups-managed">小五代管</a><a href="#groups-middle">中学时期</a></div></details>
+        <details><summary><span>05</span>我的联系方式</summary><div><a href="#contact">直接联系</a><a href="#social">社交媒体</a></div></details>
+        <details><summary><span>06</span>其他身份</summary><div><a href="#identities">其他账号</a><a href="#changelog">Changelog</a></div></details>
+        <a class="nav-root" href="#discussion"><span>07</span>讨论区</a>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-light"></span> Version 1.0.0 <a href="https://hachile.org/">hachile.org ↗</a></div>
+    </div>
+  </aside>
 
-<body class="landing">
+  <div class="site-shell" id="top">
+    <header class="topbar"><span>HACHILE <i>/</i> HOME <i>/</i> <strong>概览</strong></span><a href="https://github.com/GPDdev/home.hachile.org" target="_blank" rel="noopener noreferrer">查看源码 ↗</a></header>
+    <main class="content">
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow"><span class="status-light"></span> HELLO, INTERNET</p><h1>你好，我是<br><em>Gunpowder<span>.</span></em></h1><p>同济大学机器人专业本科生。这里收着我的网站、常用工具、运营的社群，以及一些正在探索的方向。</p><div class="hero-actions"><a class="button primary" href="#about">认识我 ↘</a><a class="button quiet" href="#my-sites">浏览网站 →</a></div></div>
+        <div class="hero-art" aria-hidden="true"><span></span><img src="./assets/images/gunpowder-avatar.png" alt=""></div><small class="hero-index">GPD / 001</small>
+      </section>
+      <div class="quick-strip"><a href="https://blog.hachile.org/">Blog ↗</a><a href="https://dev.hachile.org/">Dev ↗</a><a href="https://research.hachile.org/">Research ↗</a><a href="#discussion">讨论区 ↘</a></div>
 
-  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换亮暗模式">
-    <span class="theme-icon" id="themeIcon">☀</span>
-    <span class="theme-label" id="themeLabel">Light</span>
-  </button>
+      <section class="page-section" id="about"><header class="section-heading"><span>01 / ABOUT</span><h2>自我介绍</h2><p>关于我，以及我正在做的事。</p></header>
+        <div class="intro-panel"><div><small>WHO AM I</small><h3>从小镇做题家和 OIer，<br>到机器人与人工智能的探索者。</h3><p>曾经选科物化生、热衷政史地；现在就读于同济大学机器人专业，正在探索具身智能、世界模型等科研方向。Gunpowder 这个头像和网名从 2020 年开始使用。</p></div><dl><div><dt>学校</dt><dd>同济大学</dd></div><div><dt>专业</dt><dd>机器人</dd></div><div><dt>关注</dt><dd>具身智能 · 世界模型</dd></div><div><dt>社群</dt><dd>100+ 个网络社群</dd></div></dl></div>
+        <div class="subsection" id="interests"><h3>兴趣与方向 <small>INTERESTS</small></h3><p>喜欢历史、时政、人文地理；偶尔打音游、P 社游戏和 io 小游戏。也对军事、城市规划、哲学、轨道交通、板绘与作曲感兴趣。</p><div class="tags"><span>机器人</span><span>具身智能</span><span>世界模型</span><span>城市规划</span><span>哲学</span><span>社群运营</span></div></div>
+      </section>
 
-  <main class="landing-shell">
+      <section class="page-section" id="my-sites"><header class="section-heading"><span>02 / MY WEBSITES</span><h2>我的常用网站</h2><p>我写的、维护的，或经常打开的站点。</p></header>
+        <div class="subsection"><h3>个人站点 <small>HACHILE NETWORK</small></h3><div class="site-grid">
+          <a href="https://blog.hachile.org/"><b>✎</b><strong>Blog</strong><small>文章与笔记</small><span>blog.hachile.org ↗</span></a>
+          <a href="https://gallery.hachile.org/"><b>▦</b><strong>Gallery</strong><small>图像与收藏</small><span>gallery.hachile.org ↗</span></a>
+          <a href="https://dev.hachile.org/"><b>&lt;/&gt;</b><strong>Dev</strong><small>开发项目</small><span>dev.hachile.org ↗</span></a>
+          <a href="https://research.hachile.org/"><b>⌕</b><strong>Research</strong><small>研究与作品</small><span>research.hachile.org ↗</span></a>
+        </div></div>
+        <div class="subsection" id="my-projects"><h3>社群与工具 <small>PROJECTS & TOOLS</small></h3><div class="resource-list">
+          <a href="https://sky.hachile.org/"><strong>Sky</strong><span>个人主题站点</span><small>sky.hachile.org ↗</small></a>
+          <a href="https://ghc.hachile.org/"><strong>GHC</strong><span>国豪相关站点</span><small>ghc.hachile.org ↗</small></a>
+          <a href="https://bronymap.hachile.org/"><strong>Brony Map</strong><span>主题地图</span><small>bronymap.hachile.org ↗</small></a>
+          <a href="https://iasrcloud.streamlit.app/"><strong>IASR Cloud</strong><span>综合空情识别系统网页版</span><small>iasrcloud.streamlit.app ↗</small></a>
+        </div></div>
+      </section>
 
-    <header class="brandline">
-      <div>
-        <p class="kicker">HACHILE IDENTITY HUB</p>
-        <h1>Which side<br>are you looking for?</h1>
-      </div>
-      <p class="subtitle">欢迎来到我的个人主页。</p>
-    </header>
+      <section class="page-section" id="recommend-study"><header class="section-heading"><span>03 / RECOMMENDATIONS</span><h2>我推荐的网站</h2><p>学习、创作和日常使用时值得收藏的入口。</p></header>
+        <div class="subsection"><h3>校园与学习 <small>CAMPUS & LEARNING</small></h3><div class="resource-list">
+          <a href="https://github.com/GPDdev/GHCollege-Tongji-review-materials"><strong>同济国豪书院复习资料</strong><span>GitHub 资料仓库</span><small>GPDdev / GitHub ↗</small></a>
+          <a href="https://github.com/HSrockstar/Guohao_College_of_Tongji_University/tree/main"><strong>Guohao College of Tongji University</strong><span>同济国豪书院资料仓库</span><small>HSrockstar / GitHub ↗</small></a>
+          <a href="https://www.tongji.icu/"><strong>tongji.icu</strong><span>同济社区</span><small>tongji.icu ↗</small></a>
+          <a href="https://www.kdocs.cn/l/cnbYWAvDVc19"><strong>金山文档资料</strong><span>常用资料链接</span><small>kdocs.cn ↗</small></a>
+          <a href="https://docs.ocsjs.com"><strong>OCS 文档</strong><span>工具使用说明</span><small>docs.ocsjs.com ↗</small></a>
+        </div></div>
+        <div class="subsection" id="recommend-tools"><h3>效率工具 <small>PRODUCTIVITY</small></h3><div class="resource-list">
+          <a href="https://www.ilovepdf.com/zh-cn"><strong>iLovePDF</strong><span>PDF 处理</span><small>ilovepdf.com ↗</small></a>
+          <a href="https://www.processon.com/latex"><strong>ProcessOn LaTeX</strong><span>公式编辑</span><small>processon.com ↗</small></a>
+          <a href="https://www.ailv.run/"><strong>AI 旅</strong><span>在线工具</span><small>ailv.run ↗</small></a>
+          <a href="http://ping0.cc/"><strong>Ping0</strong><span>网络工具</span><small>ping0.cc ↗</small></a>
+          <a href="https://www.speedtest.net/"><strong>Speedtest</strong><span>网络测速</span><small>speedtest.net ↗</small></a>
+        </div></div>
+        <div class="subsection" id="recommend-explore"><h3>出行与探索 <small>EXPLORE</small></h3><div class="resource-list">
+          <a href="https://railmapgen.org"><strong>Rail Map Generator</strong><span>轨道交通线路图制作</span><small>railmapgen.org ↗</small></a>
+          <a href="https://www.youbianku.com/#google_vignette"><strong>邮编库</strong><span>邮编与地址查询</span><small>youbianku.com ↗</small></a>
+          <a href="https://www.f5soft.site/apps/wayfinder/"><strong>Wayfinder</strong><span>路线与出行工具</span><small>f5soft.site ↗</small></a>
+        </div></div>
+      </section>
 
-    <section class="section-card">
-      <div class="section-title"><h2>欢迎加入Hachile粉丝群</h2><span>Welcome to my fan club</span></div>
-      <div class="link-grid">
-        <button class="link-card copy-card" data-copy="1093103829"><span class="link-name">Gunpowder粉丝群QQ群号</span><span class="link-value">1093103829</span><span class="link-action">复制</span></button>
-      </div>
-    </section>
+      <section class="page-section" id="groups-school"><header class="section-heading"><span>04 / COMMUNITIES</span><h2>我建的群</h2><p>点击群号即可复制。部分社群暂不开放加入。</p></header>
+        <div class="subsection"><h3>校园与兴趣 <small>CAMPUS & INTERESTS</small></h3><div class="group-grid">
+          <div class="group-card"><strong>同济大学国豪书院 25 级学生群</strong><span>暂不开放加入</span></div>
+          <button class="group-card copy-card" data-copy="959672765"><strong>同济国豪联谊会</strong><span>959672765 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1103021149"><strong>同济 AI 与大模型交流群</strong><span>1103021149 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1048413641"><strong>香港理工大学研学交换互助群</strong><span>1048413641 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="275358079"><strong>数学建模竞赛交流与组队群</strong><span>275358079 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="612716470"><strong>同济国豪竞赛信息交流与组队群</strong><span>612716470 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1056591162"><strong>铜陵同济校友会</strong><span>1056591162 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1079121860"><strong>主义主义哲学研究中心</strong><span>1079121860 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="956114875"><strong>XCPC 集训营</strong><span>956114875 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1059689430"><strong>同济 25 级未来技术班交流群</strong><span>1059689430 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="812158779"><strong>同济 25 级安徽同学群</strong><span>812158779 · 点击复制</span></button>
+          <button class="group-card copy-card featured" data-copy="1093103829"><strong>Gunpowder Central · 个人主群</strong><span>1093103829 · 点击复制</span></button>
+        </div></div>
+        <div class="subsection" id="groups-managed"><h3>小五代管 <small>MANAGED BY BOT</small></h3><div class="group-grid">
+          <button class="group-card copy-card" data-copy="984780741"><strong>济星公社 J-Star Commune</strong><span>984780741 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1101135584"><strong>同舟共济会</strong><span>1101135584 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1058537029"><strong>长三角大学生交流群</strong><span>1058537029 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="642026559"><strong>钻石投票交流群</strong><span>642026559 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="780925674"><strong>kiomet.com 中国玩家交流群</strong><span>780925674 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="458765979"><strong>Python 交流群</strong><span>458765979 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1031490587"><strong>铜陵学生交流群</strong><span>1031490587 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="1025032254"><strong>HTML 学习交流群</strong><span>1025032254 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="629031721"><strong>mindofnations 交流群</strong><span>629031721 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="493327923"><strong>神人养蛊群</strong><span>493327923 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="767814123"><strong>高校学生发疯群</strong><span>767814123 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="887053810"><strong>高校学生奋斗群</strong><span>887053810 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="742369846"><strong>Minecraft 好望角城镇交流群</strong><span>742369846 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="934139029"><strong>同济体育锻炼群</strong><span>934139029 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="972970419"><strong>俄乌冲突交流群</strong><span>972970419 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="567832207"><strong>OIer 集训交流群</strong><span>567832207 · 点击复制</span></button>
+        </div></div>
+        <div class="subsection" id="groups-middle"><h3>中学时期 <small>EARLIER COMMUNITIES</small></h3><div class="group-grid">
+          <button class="group-card copy-card" data-copy="1013781138"><strong>西安交通大学少年班备考群</strong><span>1013781138 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="751079198"><strong>中科大少年班备考交流群</strong><span>751079198 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="312437984"><strong>桂山精神传承中心</strong><span>312437984 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="604823745"><strong>高中直升班交流群</strong><span>604823745 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="463974999"><strong>小天才手表俱乐部</strong><span>463974999 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="201706563"><strong>高中文化课 / 竞赛膜佬群</strong><span>201706563 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="746387254"><strong>高中学习资料交流群</strong><span>746387254 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="858293729"><strong>河大附中 QQ 频道管理群</strong><span>858293729 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="862618385"><strong>附中同盟会</strong><span>862618385 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="833514850"><strong>OHYS 世界观交流群</strong><span>833514850 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="757805878"><strong>附中谐联 F.H.U.</strong><span>757805878 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="950787228"><strong>学而思编程社区公会 3 群</strong><span>950787228 · 点击复制</span></button>
+          <button class="group-card copy-card" data-copy="837897246"><strong>铜陵 generals.io 交流群</strong><span>837897246 · 点击复制</span></button>
+        </div></div>
+      </section>
 
-    <section class="identity-grid" aria-label="身份选择">
+      <section class="page-section" id="contact"><header class="section-heading"><span>05 / CONTACT</span><h2>我的联系方式</h2><p>欢迎联系我，也欢迎交换友链。</p></header>
+        <div class="contact-grid"><button class="contact-card copy-card" data-copy="1213956808"><span>QQ</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><button class="contact-card copy-card" data-copy="1213956808"><span>微信</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><a class="contact-card" href="mailto:hejiale.ai@outlook.com"><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>发送邮件 ↗</small></a></div>
+        <div class="subsection" id="social"><h3>社交媒体 <small>SOCIAL</small></h3><div class="social-grid"><a href="https://space.bilibili.com/535607835">Bilibili ↗</a><a href="https://www.zhihu.com/people/gunpowder-92">知乎 ↗</a><a href="https://f.yourtj.de/u/61">YourTJ ↗</a><a href="https://github.com/GPDdev">GitHub ↗</a><a href="https://www.instagram.com/Gpdinst/">Instagram ↗</a><a href="https://www.reddit.com/u/Gunpowderedd">Reddit ↗</a><a href="https://steamcommunity.com/profiles/76561199868768518">Steam ↗</a><a href="https://www.luogu.com.cn/user/316855">洛谷 ↗</a><a href="https://www.cnblogs.com/gunpowder/">博客园 ↗</a><button class="copy-card" data-copy="42283614369">小红书 · 42283614369 ↗</button><button class="copy-card" data-copy="79492713231">抖音 · 79492713231 ↗</button></div></div>
+      </section>
 
-      <a class="identity-card human" href="./gunpowder/">
-        <div class="card-content">
-          <div class="card-profile">
-            <img class="avatar" src="./assets/images/gunpowder-avatar.png" alt="Gunpowder avatar">
-            <div>
-              <span class="card-type">Student of Tongji University</span>
-              <h2>Gunpowder</h2>
-              <p>Student · Developer · Community Builder</p>
-            </div>
-          </div>
+      <section class="page-section" id="identities"><header class="section-heading"><span>06 / IDENTITIES</span><h2>其他身份</h2><p>在不同社群和项目里使用的其他账号。</p></header>
+        <div class="identity-list"><button class="identity-item copy-card" data-copy="3696952445"><span>GPDdev</span><strong>开发号 · 让信息流动</strong><small>QQ 3696952445 · 点击复制</small></button><button class="identity-item copy-card" data-copy="3783862560"><span>TJAI Admin</span><strong>同济 AI 大模型交流群管理员</strong><small>QQ 3783862560 · 点击复制</small></button><button class="identity-item copy-card" data-copy="4017722384"><span>hachile bot</span><strong>QQ 官方 Bot</strong><small>QQ 4017722384 · 点击复制</small></button><button class="identity-item copy-card" data-copy="2472813533"><span>小五</span><strong>社群管理 Bot</strong><small>QQ 2472813533 · 点击复制</small></button></div>
+        <div class="subsection" id="changelog"><h3>Changelog <small>HACHILE.ORG</small></h3><div class="release"><div><strong>v1.0.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>第一个正式版</h4><p>Hachile.org 个人站群的第一个正式版。Home 采用深色文档式布局，汇总个人介绍、站点导航、常用资源、社群资料、联系方式和讨论入口。</p></div></div></div>
+      </section>
 
-          <div class="enter">
-            <span>View personal homepage</span>
-            <strong>Enter →</strong>
-          </div>
-        </div>
-      </a>
-
-    </section>
-
-    <a class="gallery-card" href="https://blog.hachile.org/" aria-label="Open Hachile Blog">
-      <div class="gallery-left">
-        <div class="gallery-icon" aria-hidden="true">✎</div>
-
-        <div class="gallery-copy">
-          <span class="gallery-label">Hachile Blog</span>
-          <h2>Blog</h2>
-          <p>Notes on learning, development and everyday life.</p>
-        </div>
-      </div>
-
-      <span class="gallery-enter">
-        Read Blog <span>→</span>
-      </span>
-    </a>
-
-    <a class="gallery-card" href="https://research.hachile.org/" aria-label="Open Hachile Research Portfolio">
-      <div class="gallery-left">
-        <div class="gallery-icon" aria-hidden="true">⌕</div>
-
-        <div class="gallery-copy">
-          <span class="gallery-label">Hachile Research</span>
-          <h2>Research</h2>
-          <p>Research, engineering projects, technical skills and selected achievements.</p>
-        </div>
-      </div>
-
-      <span class="gallery-enter">
-        View Research <span>→</span>
-      </span>
-    </a>
-
-    <a class="gallery-card" href="https://dev.hachile.org/" aria-label="Open Hachile Dev Projects">
-      <div class="gallery-left">
-        <div class="gallery-icon" aria-hidden="true">&lt;/&gt;</div>
-
-        <div class="gallery-copy">
-          <span class="gallery-label">Hachile Dev</span>
-          <h2>Dev</h2>
-          <p>Open-source projects, engineering prototypes and technical experiments.</p>
-        </div>
-      </div>
-
-      <span class="gallery-enter">
-        View Projects <span>→</span>
-      </span>
-    </a>
-
-    <a class="gallery-card" href="https://gallery.hachile.org/" aria-label="Open Hachile Gallery">
-      <div class="gallery-left">
-        <div class="gallery-icon" aria-hidden="true">▦</div>
-
-        <div class="gallery-copy">
-          <span class="gallery-label">Hachile Gallery</span>
-          <h2>Gallery</h2>
-          <p>A small visual archive of things I like, make, play and remember.</p>
-        </div>
-      </div>
-
-      <span class="gallery-enter">
-        View Gallery <span>→</span>
-      </span>
-    </a>
-
-    <footer class="landing-footer">
-      <span>home.hachile.org · ALPHA</span>
-      <span>Powered by GPDdev</span>
-    </footer>
-
-  </main>
-
+      <section class="page-section discussion" id="discussion"><span>07 / DISCUSSION</span><h2>来聊聊？</h2><p>网站建议、项目交流、友链申请，或只是打个招呼，都可以到讨论区发帖。使用 GitHub 账号参与。</p><a class="button primary" href="https://github.com/GPDdev/home.hachile.org/discussions" target="_blank" rel="noopener noreferrer">进入讨论区 ↗</a></section>
+      <footer class="footer"><span>© 2026 Gunpowder · Hachile Home</span><span>Version 1.0.0 <i>/</i> <a href="#top">返回顶部 ↑</a></span></footer>
+    </main>
+  </div>
+  <div class="toast" aria-live="polite"></div>
+  <script src="./assets/app.js"></script>
   <script>
-    const toggle = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
-    const label = document.getElementById('themeLabel');
-    const themeMeta = document.querySelector('meta[name="theme-color"]');
-
-    function syncThemeButton() {
-      const theme = document.documentElement.getAttribute('data-theme');
-      const isDark = theme === 'dark';
-
-      icon.textContent = isDark ? '☾' : '☀';
-      label.textContent = isDark ? 'Dark' : 'Light';
-
-      toggle.setAttribute(
-        'aria-label',
-        isDark ? '切换到亮色模式' : '切换到暗色模式'
-      );
-
-      themeMeta.setAttribute(
-        'content',
-        isDark ? '#070910' : '#dff7f4'
-      );
-    }
-
-    toggle.addEventListener('click', function () {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('hachile-theme', next);
-      syncThemeButton();
-    });
-
-    syncThemeButton();
+    const menu = document.getElementById('menu-button');
+    const sidebar = document.getElementById('sidebar');
+    const scrim = document.getElementById('sidebar-scrim');
+    function closeMenu() { menu.setAttribute('aria-expanded', 'false'); sidebar.classList.remove('is-open'); scrim.hidden = true; }
+    menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); sidebar.classList.toggle('is-open', open); scrim.hidden = !open; });
+    scrim.addEventListener('click', closeMenu);
+    sidebar.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
   </script>
-
-<!-- Cloudflare Web Analytics -->
-<script
-  type="module"
-  src="https://static.cloudflareinsights.com/beacon.min.js"
-  data-cf-beacon='{"token": "3c0896dc45254390b07fa67a037d1e5d"}'>
-</script>
-<!-- End Cloudflare Web Analytics -->
-  
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"3c0896dc45254390b07fa67a037d1e5d"}'></script>
 </body>
 </html>
