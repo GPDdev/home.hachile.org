@@ -17,7 +17,7 @@
         await navigator.clipboard.writeText(value);
         el.classList.add('copied');
         setTimeout(() => el.classList.remove('copied'), 700);
-        showToast(`已复制：${value}`);
+        showToast(`${document.documentElement.lang === 'en' ? 'Copied' : '已复制'}：${value}`);
       } catch (_) {
         showToast(value);
       }

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Gunpowder Central: personal sites, recommended resources, communities, contact information, and discussions.">
+  <title>Gunpowder Central</title>
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="stylesheet" href="../assets/home.css">
+  <script>document.documentElement.dataset.theme = localStorage.getItem('home-theme') || 'dark';</script>
+</head>
+<body>
+  <button class="menu-button" id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">☰ <span>Menu</span></button>
+  <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="站点目录">
+    <div class="sidebar-inner">
+      <a class="brand" href="#top"><img class="brand-icon" src="/icon.png" alt=""><span><strong>Gunpowder Central</strong><small>Gunpowder's personal space</small></span></a>
+      <p class="sidebar-label">NAVIGATION / CONTENTS</p>
+      <nav class="side-nav" aria-label="主导航">
+        <a class="nav-root" href="#top"><span>⌂</span>Overview</a>
+        <details open><summary><span>01</span>About me</summary><div><a href="#about">Who I am</a><a href="#interests">Interests and goals</a></div></details>
+        <details open><summary><span>02</span>My websites</summary><div><a href="#my-sites">Personal sites</a><a href="#my-projects">Communities and tools</a></div></details>
+        <details><summary><span>03</span>Recommended sites</summary><div><a href="#recommend-study">Campus and learning</a><a href="#recommend-tools">Productivity tools</a><a href="#recommend-explore">Travel and web</a></div></details>
+        <details><summary><span>04</span>My communities</summary><div><a href="#groups-school">Campus and interests</a><a href="#groups-managed">Managed by Xiao Wu</a><a href="#groups-middle">School years</a></div></details>
+        <details><summary><span>05</span>Contact me</summary><div><a href="#contact">Direct contact</a><a href="#social">Social media</a></div></details>
+        <details><summary><span>06</span>Other identities</summary><div><a href="#identities">Other accounts</a><a href="#changelog">Changelog</a></div></details>
+        <a class="nav-root" href="#discussion"><span>07</span>Discussion</a>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-light"></span> Version 1.1.0 <a href="https://hachile.org/">hachile.org ↗</a></div>
+    </div>
+  </aside>
+
+  <div class="site-shell" id="top">
+    <header class="topbar"><div class="topbar-actions"><button class="theme-toggle" type="button" aria-label="Toggle light or dark mode">◐ <span>Light mode</span></button><a class="language-link" href="/" lang="zh-CN">中文 ↗</a></div></header>
+    <main class="content">
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow"><span class="status-light"></span> HELLO, INTERNET</p><h1>Hi, I'm<br><em>Gunpowder</em></h1><p>Robotics undergraduate at Tongji University. Here you will find my websites, favorite tools, communities, and ideas I am exploring.</p><div class="hero-actions"><a class="button primary" href="#about">Meet me ↘</a><a class="button quiet" href="#my-sites">Browse sites →</a></div></div>
+        <div class="hero-art" aria-hidden="true"><span></span><img src="../assets/images/gunpowder-avatar.png" alt=""></div><small class="hero-index">GPD / 001</small>
+      </section>
+      <div class="quick-strip"><a href="https://blog.hachile.org/">Blog ↗</a><a href="https://dev.hachile.org/">Dev ↗</a><a href="https://research.hachile.org/">Research ↗</a><a href="#discussion">Discussion ↘</a></div>
+
+      <section class="page-section" id="about"><header class="section-heading"><span>01 / ABOUT</span><h2>About me</h2><p>A little about me and what I am working on.</p></header>
+        <div class="intro-panel"><div><small>WHO AM I</small><h3>From a small-town student and OIer<br>to exploring robotics and AI.</h3><p>I studied physics, chemistry, and biology while also enjoying history, politics, and geography. Now I study robotics at Tongji University and explore embodied AI and world models. I have used the Gunpowder name and avatar since 2020.</p></div><dl><div><dt>University</dt><dd>Tongji University</dd></div><div><dt>Major</dt><dd>Robotics</dd></div><div><dt>Focus</dt><dd>Embodied AI · World models</dd></div><div><dt>Communities</dt><dd>100+ online communities</dd></div></dl></div>
+        <div class="subsection" id="interests"><h3>Interests and goals <small>INTERESTS</small></h3><p>I enjoy history, current affairs, and human geography, plus rhythm games, Paradox games, and io games. I am also interested in military studies, urban planning, philosophy, rail transit, digital art, and composition.</p><div class="tags"><span>Robotics</span><span>Embodied AI</span><span>World models</span><span>Urban planning</span><span>Philosophy</span><span>Community building</span></div></div>
+      </section>
+
+      <section class="page-section" id="my-sites"><header class="section-heading"><span>02 / MY WEBSITES</span><h2>My websites</h2><p>Sites I build, maintain, or visit often.</p></header>
+        <div class="subsection"><h3>Personal sites <small>HACHILE NETWORK</small></h3><div class="site-grid">
+          <a href="https://blog.hachile.org/"><b>✎</b><strong>Blog</strong><small>Articles and notes</small><span>blog.hachile.org ↗</span></a>
+          <a href="https://gallery.hachile.org/"><b>▦</b><strong>Gallery</strong><small>Images and collections</small><span>gallery.hachile.org ↗</span></a>
+          <a href="https://dev.hachile.org/"><b>&lt;/&gt;</b><strong>Dev</strong><small>Development projects</small><span>dev.hachile.org ↗</span></a>
+          <a href="https://research.hachile.org/"><b>⌕</b><strong>Research</strong><small>Research and work</small><span>research.hachile.org ↗</span></a>
+        </div></div>
+        <div class="subsection" id="my-projects"><h3>Communities and tools <small>PROJECTS & TOOLS</small></h3><div class="resource-list">
+          <a data-icon="☁️" href="https://sky.hachile.org/"><strong>Sky</strong><span>Personal themed site</span><small>sky.hachile.org ↗</small></a>
+          <a data-icon="🎓" href="https://ghc.hachile.org/"><strong>GHC</strong><span>Guohao College site</span><small>ghc.hachile.org ↗</small></a>
+          <a data-icon="🗺️" href="https://bronymap.hachile.org/"><strong>Brony Map</strong><span>Community map</span><small>bronymap.hachile.org ↗</small></a>
+          <a data-icon="📡" href="https://iasrcloud.streamlit.app/"><strong>IASR Cloud</strong><span>Web app for integrated air-situation recognition</span><small>iasrcloud.streamlit.app ↗</small></a>
+        </div></div>
+      </section>
+
+      <section class="page-section" id="recommend-study"><header class="section-heading"><span>03 / RECOMMENDATIONS</span><h2>Recommended sites</h2><p>Useful links for learning, making, and everyday work.</p></header>
+        <div class="subsection"><h3>Campus and learning <small>CAMPUS & LEARNING</small></h3><div class="resource-list">
+          <a data-icon="📚" href="https://github.com/GPDdev/GHCollege-Tongji-review-materials"><strong>Tongji Guohao College review materials</strong><span>GitHub resource repository</span><small>GPDdev / GitHub ↗</small></a>
+          <a data-icon="📖" href="https://github.com/HSrockstar/Guohao_College_of_Tongji_University/tree/main"><strong>Guohao College of Tongji University</strong><span>Guohao College resource repository</span><small>HSrockstar / GitHub ↗</small></a>
+          <a data-icon="🏫" href="https://www.tongji.icu/"><strong>tongji.icu</strong><span>Tongji community</span><small>tongji.icu ↗</small></a>
+          <a data-icon="🗂️" href="https://www.kdocs.cn/l/cnbYWAvDVc19"><strong>KDocs resources</strong><span>Shared resource document</span><small>kdocs.cn ↗</small></a>
+          <a data-icon="📝" href="https://docs.ocsjs.com"><strong>OCS documentation</strong><span>Usage guide</span><small>docs.ocsjs.com ↗</small></a>
+        </div></div>
+        <div class="subsection" id="recommend-tools"><h3>Productivity tools <small>PRODUCTIVITY</small></h3><div class="resource-list">
+          <a data-icon="📄" href="https://www.ilovepdf.com/zh-cn"><strong>iLovePDF</strong><span>PDF tools</span><small>ilovepdf.com ↗</small></a>
+          <a data-icon="∑" href="https://www.processon.com/latex"><strong>ProcessOn LaTeX</strong><span>Equation editor</span><small>processon.com ↗</small></a>
+          <a data-icon="✦" href="https://www.ailv.run/"><strong>AI Lv</strong><span>Online tools</span><small>ailv.run ↗</small></a>
+          <a data-icon="⌁" href="http://ping0.cc/"><strong>Ping0</strong><span>Network tools</span><small>ping0.cc ↗</small></a>
+          <a data-icon="⚡" href="https://www.speedtest.net/"><strong>Speedtest</strong><span>Internet speed test</span><small>speedtest.net ↗</small></a>
+        </div></div>
+        <div class="subsection" id="recommend-explore"><h3>Travel and exploration <small>EXPLORE</small></h3><div class="resource-list">
+          <a data-icon="🚇" href="https://railmapgen.org"><strong>Rail Map Generator</strong><span>Rail transit map maker</span><small>railmapgen.org ↗</small></a>
+          <a data-icon="✉️" href="https://www.youbianku.com/#google_vignette"><strong>Postal code directory</strong><span>Postal code and address lookup</span><small>youbianku.com ↗</small></a>
+          <a data-icon="🧭" href="https://www.f5soft.site/apps/wayfinder/"><strong>Wayfinder</strong><span>Route and travel tools</span><small>f5soft.site ↗</small></a>
+        </div></div>
+      </section>
+
+      <section class="page-section" id="groups-school"><header class="section-heading"><span>04 / COMMUNITIES</span><h2>My communities</h2><p>Click a group number to copy it. Some communities are not currently open to new members.</p></header>
+        <div class="subsection"><h3>Campus and interests <small>CAMPUS & INTERESTS</small></h3><div class="group-grid">
+          <div class="group-card"><strong>Tongji Guohao College Class of 2025</strong><span>Not accepting new members</span></div>
+          <button class="group-card copy-card" data-copy="959672765"><strong>Tongji Guohao Social Club</strong><span>959672765 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1103021149"><strong>Tongji AI and LLM Community</strong><span>1103021149 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1048413641"><strong>PolyU Study Exchange Support</strong><span>1048413641 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="275358079"><strong>Math Modeling Competition Team-up</strong><span>275358079 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="612716470"><strong>Tongji Guohao Competition Team-up</strong><span>612716470 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1056591162"><strong>Tongling–Tongji Alumni</strong><span>1056591162 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1079121860"><strong>Ism Philosophy Research Center</strong><span>1079121860 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="956114875"><strong>XCPC Training Camp</strong><span>956114875 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1059689430"><strong>Tongji Future Technology Class of 2025</strong><span>1059689430 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="812158779"><strong>Tongji Anhui Students, Class of 2025</strong><span>812158779 · click to copy</span></button>
+          <button class="group-card copy-card featured" data-copy="1093103829"><strong>Gunpowder Central · Main community</strong><span>1093103829 · click to copy</span></button>
+        </div></div>
+        <div class="subsection" id="groups-managed"><h3>Managed by Xiao Wu <small>MANAGED BY BOT</small></h3><div class="group-grid">
+          <button class="group-card copy-card" data-copy="984780741"><strong>J-Star Commune</strong><span>984780741 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1101135584"><strong>Tongzhou Gongji Community</strong><span>1101135584 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1058537029"><strong>Yangtze River Delta University Students</strong><span>1058537029 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="642026559"><strong>Diamond Voting Community</strong><span>642026559 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="780925674"><strong>kiomet.com Chinese Players</strong><span>780925674 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="458765979"><strong>Python Community</strong><span>458765979 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1031490587"><strong>Tongling Students</strong><span>1031490587 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="1025032254"><strong>HTML Learning Community</strong><span>1025032254 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="629031721"><strong>Mind of Nations Community</strong><span>629031721 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="493327923"><strong>Shenren Community</strong><span>493327923 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="767814123"><strong>University Students Unwind</strong><span>767814123 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="887053810"><strong>University Students Study Together</strong><span>887053810 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="742369846"><strong>Minecraft Cape of Good Hope Town</strong><span>742369846 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="934139029"><strong>Tongji Fitness Community</strong><span>934139029 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="972970419"><strong>Russia–Ukraine Conflict Discussion</strong><span>972970419 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="567832207"><strong>OIer Training Community</strong><span>567832207 · click to copy</span></button>
+        </div></div>
+        <div class="subsection" id="groups-middle"><h3>School years <small>EARLIER COMMUNITIES</small></h3><div class="group-grid">
+          <button class="group-card copy-card" data-copy="1013781138"><strong>Xi'an Jiaotong University Youth Class Prep</strong><span>1013781138 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="751079198"><strong>USTC Youth Class Prep</strong><span>751079198 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="312437984"><strong>Guishan Spirit Community</strong><span>312437984 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="604823745"><strong>High School Direct-Admission Class</strong><span>604823745 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="463974999"><strong>Xiao Tiancai Watch Club</strong><span>463974999 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="201706563"><strong>High School Academics and Competitions</strong><span>201706563 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="746387254"><strong>High School Study Resources</strong><span>746387254 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="858293729"><strong>HDFZ QQ Channel Admins</strong><span>858293729 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="862618385"><strong>Affiliated School Alliance</strong><span>862618385 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="833514850"><strong>OHYS Worldbuilding Community</strong><span>833514850 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="757805878"><strong>F.H.U. School Community</strong><span>757805878 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="950787228"><strong>Xueersi Coding Community Guild 3</strong><span>950787228 · click to copy</span></button>
+          <button class="group-card copy-card" data-copy="837897246"><strong>Tongling generals.io Community</strong><span>837897246 · click to copy</span></button>
+        </div></div>
+      </section>
+
+      <section class="page-section" id="contact"><header class="section-heading"><span>05 / CONTACT</span><h2>Contact me</h2><p>Feel free to reach out or exchange site links.</p></header>
+        <div class="contact-grid"><button class="contact-card copy-card" data-icon="💬" data-copy="1213956808"><span>QQ</span><strong>1213956808</strong><small>Click to copy ↗</small></button><button class="contact-card copy-card" data-icon="🟢" data-copy="1213956808"><span>WeChat</span><strong>1213956808</strong><small>Click to copy ↗</small></button><a class="contact-card" data-icon="✉️" href="mailto:hejiale.ai@outlook.com"><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>Send email ↗</small></a></div>
+        <div class="subsection" id="social"><h3>Social media <small>SOCIAL</small></h3><div class="social-grid"><a data-icon="▶" href="https://space.bilibili.com/535607835">Bilibili ↗</a><a data-icon="知" href="https://www.zhihu.com/people/gunpowder-92">Zhihu ↗</a><a data-icon="T" href="https://f.yourtj.de/u/61">YourTJ ↗</a><a data-icon="⌘" href="https://github.com/GPDdev">GitHub ↗</a><a data-icon="◎" href="https://www.instagram.com/Gpdinst/">Instagram ↗</a><a data-icon="●" href="https://www.reddit.com/u/Gunpowderedd">Reddit ↗</a><a data-icon="🎮" href="https://steamcommunity.com/profiles/76561199868768518">Steam ↗</a><a data-icon="洛" href="https://www.luogu.com.cn/user/316855">Luogu ↗</a><a data-icon="博" href="https://www.cnblogs.com/gunpowder/">CNBlogs ↗</a><button class="copy-card" data-icon="📕" data-copy="42283614369">Xiaohongshu · 42283614369 ↗</button><button class="copy-card" data-icon="♫" data-copy="79492713231">Douyin · 79492713231 ↗</button></div></div>
+      </section>
+
+      <section class="page-section" id="identities"><header class="section-heading"><span>06 / IDENTITIES</span><h2>Other identities</h2><p>Other accounts I use in different communities and projects.</p></header>
+        <div class="identity-list"><button class="identity-item copy-card" data-icon="💻" data-copy="3696952445"><span>GPDdev</span><strong>Development account · Let information flow</strong><small>QQ 3696952445 · click to copy</small></button><button class="identity-item copy-card" data-icon="🧠" data-copy="3783862560"><span>TJAI Admin</span><strong>Tongji AI and LLM Community admin</strong><small>QQ 3783862560 · click to copy</small></button><button class="identity-item copy-card" data-icon="🤖" data-copy="4017722384"><span>hachile bot</span><strong>Official QQ Bot</strong><small>QQ 4017722384 · click to copy</small></button><button class="identity-item copy-card" data-icon="🛡️" data-copy="2472813533"><span>Xiao Wu</span><strong>Community management bot</strong><small>QQ 2472813533 · click to copy</small></button></div>
+        <div class="subsection" id="changelog"><h3>Changelog <small>HACHILE.ORG</small></h3><div class="release"><div><strong>v1.1.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>Bilingual interface and on-site discussions</h4><p>Renamed to Gunpowder Central, with light and dark modes, an English page, icons, and an on-site discussion board.</p></div></div><div class="release"><div><strong>v1.0.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>First formal release</h4><p>The first formal release of the Hachile.org network. Home adopts a documentation-style layout and brings together my introduction, sites, resources, communities, contact details, and discussion board.</p></div></div></div>
+      </section>
+
+      <section class="page-section discussion" id="discussion"><span>07 / DISCUSSION</span><h2>Join the conversation</h2><p>Share site feedback, discuss projects, request a link exchange, or just say hello. No account is needed. Your name and message are public; your deletion key stays in this browser.</p>
+        <div class="discussion-grid">
+          <div class="discussion-composer"><h3 id="discussion-form-title">Start a new topic</h3><p id="reply-target" hidden></p><form id="discussion-form">
+            <label>Name <input name="author" required minlength="2" maxlength="32" autocomplete="nickname" placeholder="What should we call you?"></label>
+            <label id="topic-title-field">Title <input name="title" required minlength="4" maxlength="100" placeholder="What is on your mind?"></label>
+            <label>Message <textarea name="body" required minlength="2" maxlength="2000" rows="5" placeholder="Share your thoughts…"></textarea></label>
+            <div id="discussion-turnstile"></div><div class="discussion-form-actions"><button class="button primary" type="submit">Post</button><button class="button quiet" id="cancel-reply" type="button" hidden>Cancel reply</button></div>
+            <p class="discussion-form-status" id="discussion-form-status" role="status"></p>
+          </form></div>
+          <div class="discussion-board"><div class="discussion-board-head"><h3 id="discussion-board-title">Recent discussions</h3><button id="discussion-refresh" type="button">Refresh ↻</button></div><p id="discussion-status" role="status">Loading discussions…</p><div id="discussion-threads"></div><div id="discussion-detail" hidden></div></div>
+        </div>
+      </section>
+      <footer class="footer"><span>© 2026 Gunpowder · Gunpowder Central</span><span>Version 1.1.0 <i>/</i> <a href="#top">Back to top ↑</a></span></footer>
+    </main>
+  </div>
+  <div class="toast" aria-live="polite"></div>
+  <script src="../assets/app.js"></script>
+  <script src="../assets/discussion.js" defer></script>
+  <script>
+    const menu = document.getElementById('menu-button');
+    const sidebar = document.getElementById('sidebar');
+    const scrim = document.getElementById('sidebar-scrim');
+    function closeMenu() { menu.setAttribute('aria-expanded', 'false'); sidebar.classList.remove('is-open'); scrim.hidden = true; }
+    menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); sidebar.classList.toggle('is-open', open); scrim.hidden = !open; });
+    scrim.addEventListener('click', closeMenu);
+    sidebar.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+    const themeButton = document.querySelector('.theme-toggle');
+    function updateThemeButton() {
+      const light = document.documentElement.dataset.theme === 'light';
+      themeButton.firstChild.textContent = light ? '☀ ' : '◐ ';
+      themeButton.querySelector('span').textContent = document.documentElement.lang === 'en' ? (light ? 'Light mode' : 'Dark mode') : (light ? '亮色模式' : '暗色模式');
+    }
+    themeButton.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('home-theme', next);
+      updateThemeButton();
+      document.dispatchEvent(new Event('home-theme-change'));
+    });
+    updateThemeButton();
+  </script>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"3c0896dc45254390b07fa67a037d1e5d"}'></script>
+</body>
+</html>

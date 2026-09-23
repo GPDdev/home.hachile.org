@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "home-discussions-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-23",
+  "workers_dev": true,
+  "routes": [{ "pattern": "home-api.hachile.org", "custom_domain": true }],
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "home-discussions",
+    "database_id": "3d395597-bf2f-4b11-98b6-6c09c255b7a0",
+    "migrations_dir": "migrations"
+  }],
+  "vars": { "TURNSTILE_SITE_KEY": "0x4AAAAAAFBMkICMrigTdpd8" }
+}

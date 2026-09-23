@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d12">
   <meta name="description" content="Gunpowder 的个人主页：介绍、网站、推荐资源、社群、联系方式与讨论区。">
-  <title>Gunpowder · Hachile Home</title>
+  <title>Gunpowder Central</title>
+  <link rel="icon" type="image/png" href="/icon.png">
   <link rel="stylesheet" href="./assets/home.css">
+  <script>document.documentElement.dataset.theme = localStorage.getItem('home-theme') || 'dark';</script>
 </head>
 <body>
   <button class="menu-button" id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">☰ <span>目录</span></button>
   <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
   <aside class="sidebar" id="sidebar" aria-label="站点目录">
     <div class="sidebar-inner">
-      <a class="brand" href="#top"><span class="brand-mark">H<span>.</span></span><span><strong>Hachile Home</strong><small>Gunpowder 的个人空间</small></span></a>
+      <a class="brand" href="#top"><img class="brand-icon" src="/icon.png" alt=""><span><strong>Gunpowder Central</strong><small>Gunpowder 的个人空间</small></span></a>
       <p class="sidebar-label">导航 / CONTENTS</p>
       <nav class="side-nav" aria-label="主导航">
         <a class="nav-root" href="#top"><span>⌂</span>概览</a>
@@ -25,15 +27,15 @@
         <details><summary><span>06</span>其他身份</summary><div><a href="#identities">其他账号</a><a href="#changelog">Changelog</a></div></details>
         <a class="nav-root" href="#discussion"><span>07</span>讨论区</a>
       </nav>
-      <div class="sidebar-bottom"><span class="status-light"></span> Version 1.0.0 <a href="https://hachile.org/">hachile.org ↗</a></div>
+      <div class="sidebar-bottom"><span class="status-light"></span> Version 1.1.0 <a href="https://hachile.org/">hachile.org ↗</a></div>
     </div>
   </aside>
 
   <div class="site-shell" id="top">
-    <header class="topbar"><span>HACHILE <i>/</i> HOME <i>/</i> <strong>概览</strong></span><a href="https://github.com/GPDdev/home.hachile.org" target="_blank" rel="noopener noreferrer">查看源码 ↗</a></header>
+    <header class="topbar"><div class="topbar-actions"><button class="theme-toggle" type="button" aria-label="切换亮色或暗色模式">◐ <span>亮色模式</span></button><a class="language-link" href="/en/" lang="en">English ↗</a></div></header>
     <main class="content">
       <section class="hero">
-        <div class="hero-copy"><p class="eyebrow"><span class="status-light"></span> HELLO, INTERNET</p><h1>你好，我是<br><em>Gunpowder<span>.</span></em></h1><p>同济大学机器人专业本科生。这里收着我的网站、常用工具、运营的社群，以及一些正在探索的方向。</p><div class="hero-actions"><a class="button primary" href="#about">认识我 ↘</a><a class="button quiet" href="#my-sites">浏览网站 →</a></div></div>
+        <div class="hero-copy"><p class="eyebrow"><span class="status-light"></span> HELLO, INTERNET</p><h1>你好，我是<br><em>Gunpowder</em></h1><p>同济大学机器人专业本科生。这里收着我的网站、常用工具、运营的社群，以及一些正在探索的方向。</p><div class="hero-actions"><a class="button primary" href="#about">认识我 ↘</a><a class="button quiet" href="#my-sites">浏览网站 →</a></div></div>
         <div class="hero-art" aria-hidden="true"><span></span><img src="./assets/images/gunpowder-avatar.png" alt=""></div><small class="hero-index">GPD / 001</small>
       </section>
       <div class="quick-strip"><a href="https://blog.hachile.org/">Blog ↗</a><a href="https://dev.hachile.org/">Dev ↗</a><a href="https://research.hachile.org/">Research ↗</a><a href="#discussion">讨论区 ↘</a></div>
@@ -51,32 +53,32 @@
           <a href="https://research.hachile.org/"><b>⌕</b><strong>Research</strong><small>研究与作品</small><span>research.hachile.org ↗</span></a>
         </div></div>
         <div class="subsection" id="my-projects"><h3>社群与工具 <small>PROJECTS & TOOLS</small></h3><div class="resource-list">
-          <a href="https://sky.hachile.org/"><strong>Sky</strong><span>个人主题站点</span><small>sky.hachile.org ↗</small></a>
-          <a href="https://ghc.hachile.org/"><strong>GHC</strong><span>国豪相关站点</span><small>ghc.hachile.org ↗</small></a>
-          <a href="https://bronymap.hachile.org/"><strong>Brony Map</strong><span>主题地图</span><small>bronymap.hachile.org ↗</small></a>
-          <a href="https://iasrcloud.streamlit.app/"><strong>IASR Cloud</strong><span>综合空情识别系统网页版</span><small>iasrcloud.streamlit.app ↗</small></a>
+          <a data-icon="☁️" href="https://sky.hachile.org/"><strong>Sky</strong><span>个人主题站点</span><small>sky.hachile.org ↗</small></a>
+          <a data-icon="🎓" href="https://ghc.hachile.org/"><strong>GHC</strong><span>国豪相关站点</span><small>ghc.hachile.org ↗</small></a>
+          <a data-icon="🗺️" href="https://bronymap.hachile.org/"><strong>Brony Map</strong><span>主题地图</span><small>bronymap.hachile.org ↗</small></a>
+          <a data-icon="📡" href="https://iasrcloud.streamlit.app/"><strong>IASR Cloud</strong><span>综合空情识别系统网页版</span><small>iasrcloud.streamlit.app ↗</small></a>
         </div></div>
       </section>
 
       <section class="page-section" id="recommend-study"><header class="section-heading"><span>03 / RECOMMENDATIONS</span><h2>我推荐的网站</h2><p>学习、创作和日常使用时值得收藏的入口。</p></header>
         <div class="subsection"><h3>校园与学习 <small>CAMPUS & LEARNING</small></h3><div class="resource-list">
-          <a href="https://github.com/GPDdev/GHCollege-Tongji-review-materials"><strong>同济国豪书院复习资料</strong><span>GitHub 资料仓库</span><small>GPDdev / GitHub ↗</small></a>
-          <a href="https://github.com/HSrockstar/Guohao_College_of_Tongji_University/tree/main"><strong>Guohao College of Tongji University</strong><span>同济国豪书院资料仓库</span><small>HSrockstar / GitHub ↗</small></a>
-          <a href="https://www.tongji.icu/"><strong>tongji.icu</strong><span>同济社区</span><small>tongji.icu ↗</small></a>
-          <a href="https://www.kdocs.cn/l/cnbYWAvDVc19"><strong>金山文档资料</strong><span>常用资料链接</span><small>kdocs.cn ↗</small></a>
-          <a href="https://docs.ocsjs.com"><strong>OCS 文档</strong><span>工具使用说明</span><small>docs.ocsjs.com ↗</small></a>
+          <a data-icon="📚" href="https://github.com/GPDdev/GHCollege-Tongji-review-materials"><strong>同济国豪书院复习资料</strong><span>GitHub 资料仓库</span><small>GPDdev / GitHub ↗</small></a>
+          <a data-icon="📖" href="https://github.com/HSrockstar/Guohao_College_of_Tongji_University/tree/main"><strong>Guohao College of Tongji University</strong><span>同济国豪书院资料仓库</span><small>HSrockstar / GitHub ↗</small></a>
+          <a data-icon="🏫" href="https://www.tongji.icu/"><strong>tongji.icu</strong><span>同济社区</span><small>tongji.icu ↗</small></a>
+          <a data-icon="🗂️" href="https://www.kdocs.cn/l/cnbYWAvDVc19"><strong>金山文档资料</strong><span>常用资料链接</span><small>kdocs.cn ↗</small></a>
+          <a data-icon="📝" href="https://docs.ocsjs.com"><strong>OCS 文档</strong><span>工具使用说明</span><small>docs.ocsjs.com ↗</small></a>
         </div></div>
         <div class="subsection" id="recommend-tools"><h3>效率工具 <small>PRODUCTIVITY</small></h3><div class="resource-list">
-          <a href="https://www.ilovepdf.com/zh-cn"><strong>iLovePDF</strong><span>PDF 处理</span><small>ilovepdf.com ↗</small></a>
-          <a href="https://www.processon.com/latex"><strong>ProcessOn LaTeX</strong><span>公式编辑</span><small>processon.com ↗</small></a>
-          <a href="https://www.ailv.run/"><strong>AI 旅</strong><span>在线工具</span><small>ailv.run ↗</small></a>
-          <a href="http://ping0.cc/"><strong>Ping0</strong><span>网络工具</span><small>ping0.cc ↗</small></a>
-          <a href="https://www.speedtest.net/"><strong>Speedtest</strong><span>网络测速</span><small>speedtest.net ↗</small></a>
+          <a data-icon="📄" href="https://www.ilovepdf.com/zh-cn"><strong>iLovePDF</strong><span>PDF 处理</span><small>ilovepdf.com ↗</small></a>
+          <a data-icon="∑" href="https://www.processon.com/latex"><strong>ProcessOn LaTeX</strong><span>公式编辑</span><small>processon.com ↗</small></a>
+          <a data-icon="✦" href="https://www.ailv.run/"><strong>AI 旅</strong><span>在线工具</span><small>ailv.run ↗</small></a>
+          <a data-icon="⌁" href="http://ping0.cc/"><strong>Ping0</strong><span>网络工具</span><small>ping0.cc ↗</small></a>
+          <a data-icon="⚡" href="https://www.speedtest.net/"><strong>Speedtest</strong><span>网络测速</span><small>speedtest.net ↗</small></a>
         </div></div>
         <div class="subsection" id="recommend-explore"><h3>出行与探索 <small>EXPLORE</small></h3><div class="resource-list">
-          <a href="https://railmapgen.org"><strong>Rail Map Generator</strong><span>轨道交通线路图制作</span><small>railmapgen.org ↗</small></a>
-          <a href="https://www.youbianku.com/#google_vignette"><strong>邮编库</strong><span>邮编与地址查询</span><small>youbianku.com ↗</small></a>
-          <a href="https://www.f5soft.site/apps/wayfinder/"><strong>Wayfinder</strong><span>路线与出行工具</span><small>f5soft.site ↗</small></a>
+          <a data-icon="🚇" href="https://railmapgen.org"><strong>Rail Map Generator</strong><span>轨道交通线路图制作</span><small>railmapgen.org ↗</small></a>
+          <a data-icon="✉️" href="https://www.youbianku.com/#google_vignette"><strong>邮编库</strong><span>邮编与地址查询</span><small>youbianku.com ↗</small></a>
+          <a data-icon="🧭" href="https://www.f5soft.site/apps/wayfinder/"><strong>Wayfinder</strong><span>路线与出行工具</span><small>f5soft.site ↗</small></a>
         </div></div>
       </section>
 
@@ -131,21 +133,33 @@
       </section>
 
       <section class="page-section" id="contact"><header class="section-heading"><span>05 / CONTACT</span><h2>我的联系方式</h2><p>欢迎联系我，也欢迎交换友链。</p></header>
-        <div class="contact-grid"><button class="contact-card copy-card" data-copy="1213956808"><span>QQ</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><button class="contact-card copy-card" data-copy="1213956808"><span>微信</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><a class="contact-card" href="mailto:hejiale.ai@outlook.com"><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>发送邮件 ↗</small></a></div>
-        <div class="subsection" id="social"><h3>社交媒体 <small>SOCIAL</small></h3><div class="social-grid"><a href="https://space.bilibili.com/535607835">Bilibili ↗</a><a href="https://www.zhihu.com/people/gunpowder-92">知乎 ↗</a><a href="https://f.yourtj.de/u/61">YourTJ ↗</a><a href="https://github.com/GPDdev">GitHub ↗</a><a href="https://www.instagram.com/Gpdinst/">Instagram ↗</a><a href="https://www.reddit.com/u/Gunpowderedd">Reddit ↗</a><a href="https://steamcommunity.com/profiles/76561199868768518">Steam ↗</a><a href="https://www.luogu.com.cn/user/316855">洛谷 ↗</a><a href="https://www.cnblogs.com/gunpowder/">博客园 ↗</a><button class="copy-card" data-copy="42283614369">小红书 · 42283614369 ↗</button><button class="copy-card" data-copy="79492713231">抖音 · 79492713231 ↗</button></div></div>
+        <div class="contact-grid"><button class="contact-card copy-card" data-icon="💬" data-copy="1213956808"><span>QQ</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><button class="contact-card copy-card" data-icon="🟢" data-copy="1213956808"><span>微信</span><strong>1213956808</strong><small>点击复制号码 ↗</small></button><a class="contact-card" data-icon="✉️" href="mailto:hejiale.ai@outlook.com"><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>发送邮件 ↗</small></a></div>
+        <div class="subsection" id="social"><h3>社交媒体 <small>SOCIAL</small></h3><div class="social-grid"><a data-icon="▶" href="https://space.bilibili.com/535607835">Bilibili ↗</a><a data-icon="知" href="https://www.zhihu.com/people/gunpowder-92">知乎 ↗</a><a data-icon="T" href="https://f.yourtj.de/u/61">YourTJ ↗</a><a data-icon="⌘" href="https://github.com/GPDdev">GitHub ↗</a><a data-icon="◎" href="https://www.instagram.com/Gpdinst/">Instagram ↗</a><a data-icon="●" href="https://www.reddit.com/u/Gunpowderedd">Reddit ↗</a><a data-icon="🎮" href="https://steamcommunity.com/profiles/76561199868768518">Steam ↗</a><a data-icon="洛" href="https://www.luogu.com.cn/user/316855">洛谷 ↗</a><a data-icon="博" href="https://www.cnblogs.com/gunpowder/">博客园 ↗</a><button class="copy-card" data-icon="📕" data-copy="42283614369">小红书 · 42283614369 ↗</button><button class="copy-card" data-icon="♫" data-copy="79492713231">抖音 · 79492713231 ↗</button></div></div>
       </section>
 
       <section class="page-section" id="identities"><header class="section-heading"><span>06 / IDENTITIES</span><h2>其他身份</h2><p>在不同社群和项目里使用的其他账号。</p></header>
-        <div class="identity-list"><button class="identity-item copy-card" data-copy="3696952445"><span>GPDdev</span><strong>开发号 · 让信息流动</strong><small>QQ 3696952445 · 点击复制</small></button><button class="identity-item copy-card" data-copy="3783862560"><span>TJAI Admin</span><strong>同济 AI 大模型交流群管理员</strong><small>QQ 3783862560 · 点击复制</small></button><button class="identity-item copy-card" data-copy="4017722384"><span>hachile bot</span><strong>QQ 官方 Bot</strong><small>QQ 4017722384 · 点击复制</small></button><button class="identity-item copy-card" data-copy="2472813533"><span>小五</span><strong>社群管理 Bot</strong><small>QQ 2472813533 · 点击复制</small></button></div>
-        <div class="subsection" id="changelog"><h3>Changelog <small>HACHILE.ORG</small></h3><div class="release"><div><strong>v1.0.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>第一个正式版</h4><p>Hachile.org 个人站群的第一个正式版。Home 采用深色文档式布局，汇总个人介绍、站点导航、常用资源、社群资料、联系方式和讨论入口。</p></div></div></div>
+        <div class="identity-list"><button class="identity-item copy-card" data-icon="💻" data-copy="3696952445"><span>GPDdev</span><strong>开发号 · 让信息流动</strong><small>QQ 3696952445 · 点击复制</small></button><button class="identity-item copy-card" data-icon="🧠" data-copy="3783862560"><span>TJAI Admin</span><strong>同济 AI 大模型交流群管理员</strong><small>QQ 3783862560 · 点击复制</small></button><button class="identity-item copy-card" data-icon="🤖" data-copy="4017722384"><span>hachile bot</span><strong>QQ 官方 Bot</strong><small>QQ 4017722384 · 点击复制</small></button><button class="identity-item copy-card" data-icon="🛡️" data-copy="2472813533"><span>小五</span><strong>社群管理 Bot</strong><small>QQ 2472813533 · 点击复制</small></button></div>
+        <div class="subsection" id="changelog"><h3>Changelog <small>HACHILE.ORG</small></h3><div class="release"><div><strong>v1.1.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>双语界面与站内讨论区</h4><p>更名为 Gunpowder Central，增加亮/暗模式、英文页面、图标与站内讨论区。</p></div></div><div class="release"><div><strong>v1.0.0</strong><time datetime="2026-09-23">2026 / 09 / 23</time></div><div><h4>第一个正式版</h4><p>Hachile.org 个人站群的第一个正式版。Home 采用深色文档式布局，汇总个人介绍、站点导航、常用资源、社群资料、联系方式和讨论入口。</p></div></div></div>
       </section>
 
-      <section class="page-section discussion" id="discussion"><span>07 / DISCUSSION</span><h2>来聊聊？</h2><p>网站建议、项目交流、友链申请，或只是打个招呼，都可以到讨论区发帖。使用 GitHub 账号参与。</p><a class="button primary" href="https://github.com/GPDdev/home.hachile.org/discussions" target="_blank" rel="noopener noreferrer">进入讨论区 ↗</a></section>
-      <footer class="footer"><span>© 2026 Gunpowder · Hachile Home</span><span>Version 1.0.0 <i>/</i> <a href="#top">返回顶部 ↑</a></span></footer>
+      <section class="page-section discussion" id="discussion"><span>07 / DISCUSSION</span><h2>来聊聊？</h2><p>网站建议、项目交流、友链申请，或只是打个招呼，都可以直接在这里发帖，无需账号。昵称和内容会公开；删除密钥只留在当前浏览器。</p>
+        <div class="discussion-grid">
+          <div class="discussion-composer"><h3 id="discussion-form-title">发布新主题</h3><p id="reply-target" hidden></p><form id="discussion-form">
+            <label>昵称 <input name="author" required minlength="2" maxlength="32" autocomplete="nickname" placeholder="怎么称呼你？"></label>
+            <label id="topic-title-field">标题 <input name="title" required minlength="4" maxlength="100" placeholder="想聊些什么？"></label>
+            <label>内容 <textarea name="body" required minlength="2" maxlength="2000" rows="5" placeholder="写下你的想法…"></textarea></label>
+            <div id="discussion-turnstile"></div><div class="discussion-form-actions"><button class="button primary" type="submit">发布</button><button class="button quiet" id="cancel-reply" type="button" hidden>取消回复</button></div>
+            <p class="discussion-form-status" id="discussion-form-status" role="status"></p>
+          </form></div>
+          <div class="discussion-board"><div class="discussion-board-head"><h3 id="discussion-board-title">最近的讨论</h3><button id="discussion-refresh" type="button">刷新 ↻</button></div><p id="discussion-status" role="status">正在加载讨论…</p><div id="discussion-threads"></div><div id="discussion-detail" hidden></div></div>
+        </div>
+      </section>
+      <footer class="footer"><span>© 2026 Gunpowder · Gunpowder Central</span><span>Version 1.1.0 <i>/</i> <a href="#top">返回顶部 ↑</a></span></footer>
     </main>
   </div>
   <div class="toast" aria-live="polite"></div>
   <script src="./assets/app.js"></script>
+  <script src="./assets/discussion.js" defer></script>
   <script>
     const menu = document.getElementById('menu-button');
     const sidebar = document.getElementById('sidebar');
@@ -155,6 +169,20 @@
     scrim.addEventListener('click', closeMenu);
     sidebar.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', closeMenu));
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+    const themeButton = document.querySelector('.theme-toggle');
+    function updateThemeButton() {
+      const light = document.documentElement.dataset.theme === 'light';
+      themeButton.firstChild.textContent = light ? '☀ ' : '◐ ';
+      themeButton.querySelector('span').textContent = document.documentElement.lang === 'en' ? (light ? 'Light mode' : 'Dark mode') : (light ? '亮色模式' : '暗色模式');
+    }
+    themeButton.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('home-theme', next);
+      updateThemeButton();
+      document.dispatchEvent(new Event('home-theme-change'));
+    });
+    updateThemeButton();
   </script>
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"3c0896dc45254390b07fa67a037d1e5d"}'></script>
 </body>
