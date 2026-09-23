@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dff7f4">
+  <meta name="description" content="Gunpowder identity hub">
+  <title>Hachile Identity Hub</title>
+
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <style>
+    :root {
+      --landing-bg-light:
+        radial-gradient(circle at 12% 12%, rgba(255,255,255,.95), transparent 24rem),
+        radial-gradient(circle at 85% 75%, rgba(120,220,215,.28), transparent 32rem),
+        linear-gradient(135deg, #e9fbf8 0%, #d9f5f1 45%, #c8eeeb 100%);
+
+      --landing-bg-dark:
+        radial-gradient(circle at 16% 20%, rgba(241,185,79,.12), transparent 28rem),
+        radial-gradient(circle at 85% 75%, rgba(139,237,235,.12), transparent 30rem),
+        #070910;
+    }
+
+    /* ===== Theme toggle ===== */
+    .theme-toggle {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 100;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(30, 60, 64, .16);
+      background: rgba(255,255,255,.74);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 8px 26px rgba(34, 80, 80, .12);
+      color: #163136;
+      cursor: pointer;
+      font: inherit;
+      font-size: .86rem;
+      font-weight: 750;
+      transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle .theme-icon {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* ===== Light mode page ===== */
+    html[data-theme="light"] body.landing {
+      min-height: 100vh;
+      background: var(--landing-bg-light);
+      color: #122126;
+    }
+
+    html[data-theme="light"] .landing .kicker {
+      color: #557075;
+    }
+
+    html[data-theme="light"] .landing h1 {
+      color: #0d171b;
+    }
+
+    html[data-theme="light"] .landing .subtitle {
+      color: #5d7278;
+    }
+
+    html[data-theme="light"] .landing-footer {
+      color: #698086;
+    }
+
+    /* ===== Identity cards ALWAYS stay in dark style ===== */
+    .identity-card {
+      background: transparent;
+      border-color: var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .identity-card::before {
+      opacity: 1;
+      filter: none;
+    }
+
+    .identity-card::after {
+      background: linear-gradient(
+        to top,
+        rgba(4,7,13,.96) 3%,
+        rgba(4,7,13,.55) 52%,
+        rgba(4,7,13,.18)
+      );
+    }
+
+    .card-type {
+      color: var(--muted);
+    }
+
+    .card-content h2 {
+      color: #f6f8fc;
+    }
+
+    .card-content p {
+      color: #d5d9e3;
+    }
+
+    .enter {
+      border-top-color: rgba(255,255,255,.16);
+      color: #f6f8fc;
+    }
+
+    .human .enter strong {
+      color: var(--human);
+    }
+
+    .avatar {
+      border-color: rgba(255,255,255,.9);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      background: #fff;
+    }
+
+    /* ===== Gallery card: default/light ===== */
+    .gallery-card {
+      position: relative;
+      margin-top: 22px;
+      min-height: 138px;
+      padding: 26px 30px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(20,55,58,.15);
+      background:
+        linear-gradient(115deg, rgba(255,255,255,.82), rgba(237,255,252,.68)),
+        rgba(255,255,255,.72);
+      box-shadow: 0 18px 48px rgba(45,94,94,.12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+      overflow: hidden;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
+    }
+
+    .gallery-card::before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -80px;
+      top: -120px;
+      border-radius: 50%;
+      background: rgba(112,216,210,.22);
+      pointer-events: none;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(41,145,143,.38);
+      box-shadow: 0 26px 66px rgba(45,94,94,.18);
+    }
+
+    .gallery-left {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .gallery-icon {
+      width: 72px;
+      height: 72px;
+      flex: 0 0 72px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: #0f2024;
+      color: #b9f4ee;
+      font-size: 2rem;
+      box-shadow: 0 10px 28px rgba(19,48,52,.16);
+    }
+
+    .gallery-label {
+      display: block;
+      margin-bottom: 5px;
+      color: #688087;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .gallery-copy {
+      min-width: 0;
+    }
+
+    .gallery-copy h2 {
+      margin: 0 0 6px;
+      font-size: clamp(1.8rem,3vw,2.5rem);
+      letter-spacing: -.035em;
+      color: #102126;
+    }
+
+    .gallery-copy p {
+      margin: 0;
+      color: #60757b;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    .gallery-enter {
+      position: relative;
+      z-index: 1;
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border-radius: 999px;
+      background: #102126;
+      color: #d8fffb;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    /* ===== Dark mode page ===== */
+    html[data-theme="dark"] body.landing {
+      min-height: 100vh;
+      background: var(--landing-bg-dark);
+      color: #f6f8fc;
+    }
+
+    html[data-theme="dark"] .landing .kicker,
+    html[data-theme="dark"] .landing .subtitle {
+      color: #aab2c2;
+    }
+
+    html[data-theme="dark"] .landing h1 {
+      color: #f6f8fc;
+    }
+
+    html[data-theme="dark"] .landing-footer {
+      color: #747e90;
+    }
+
+    html[data-theme="dark"] .theme-toggle {
+      color: #f3f7fa;
+      border-color: rgba(255,255,255,.15);
+      background: rgba(9,12,20,.74);
+      box-shadow: 0 8px 26px rgba(0,0,0,.24);
+    }
+
+    html[data-theme="dark"] .gallery-card {
+      border-color: rgba(255,255,255,.10);
+      background:
+        linear-gradient(120deg, rgba(20,29,39,.92), rgba(9,15,23,.92)),
+        rgba(10,15,23,.94);
+      box-shadow: 0 22px 65px rgba(0,0,0,.28);
+    }
+
+    html[data-theme="dark"] .gallery-card::before {
+      background: rgba(92,206,201,.11);
+    }
+
+    html[data-theme="dark"] .gallery-label {
+      color: #8da0a7;
+    }
+
+    html[data-theme="dark"] .gallery-copy h2 {
+      color: #f4f8fa;
+    }
+
+    html[data-theme="dark"] .gallery-copy p {
+      color: #aebac1;
+    }
+
+    html[data-theme="dark"] .gallery-icon {
+      background: #dff9f6;
+      color: #102126;
+    }
+
+    html[data-theme="dark"] .gallery-enter {
+      background: #d9f7f4;
+      color: #102126;
+    }
+
+    @media (max-width: 800px) {
+      .theme-toggle {
+        top: 12px;
+        right: 12px;
+        padding: 8px 11px;
+        font-size: .8rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .gallery-card {
+        padding: 22px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .gallery-left {
+        align-items: flex-start;
+      }
+
+      .gallery-icon {
+        width: 62px;
+        height: 62px;
+        flex-basis: 62px;
+        border-radius: 19px;
+      }
+
+      .gallery-enter {
+        align-self: stretch;
+        justify-content: space-between;
+      }
+
+      .theme-toggle .theme-label {
+        display: none;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const saved = localStorage.getItem('hachile-theme');
+      const preferredDark = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      const theme = saved || (preferredDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body class="landing">
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换亮暗模式">
+    <span class="theme-icon" id="themeIcon">☀</span>
+    <span class="theme-label" id="themeLabel">Light</span>
+  </button>
+
+  <main class="landing-shell">
+
+    <header class="brandline">
+      <div>
+        <p class="kicker">HACHILE IDENTITY HUB</p>
+        <h1>Which side<br>are you looking for?</h1>
+      </div>
+      <p class="subtitle">欢迎来到我的个人主页。</p>
+    </header>
+
+    <section class="section-card">
+      <div class="section-title"><h2>欢迎加入Hachile粉丝群</h2><span>Welcome to my fan club</span></div>
+      <div class="link-grid">
+        <button class="link-card copy-card" data-copy="1093103829"><span class="link-name">Gunpowder粉丝群QQ群号</span><span class="link-value">1093103829</span><span class="link-action">复制</span></button>
+      </div>
+    </section>
+
+    <section class="identity-grid" aria-label="身份选择">
+
+      <a class="identity-card human" href="./gunpowder/">
+        <div class="card-content">
+          <div class="card-profile">
+            <img class="avatar" src="./assets/images/gunpowder-avatar.png" alt="Gunpowder avatar">
+            <div>
+              <span class="card-type">Student of Tongji University</span>
+              <h2>Gunpowder</h2>
+              <p>Student · Developer · Community Builder</p>
+            </div>
+          </div>
+
+          <div class="enter">
+            <span>View personal homepage</span>
+            <strong>Enter →</strong>
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+    <a class="gallery-card" href="https://blog.hachile.org/" aria-label="Open Hachile Blog">
+      <div class="gallery-left">
+        <div class="gallery-icon" aria-hidden="true">✎</div>
+
+        <div class="gallery-copy">
+          <span class="gallery-label">Hachile Blog</span>
+          <h2>Blog</h2>
+          <p>Notes on learning, development and everyday life.</p>
+        </div>
+      </div>
+
+      <span class="gallery-enter">
+        Read Blog <span>→</span>
+      </span>
+    </a>
+
+    <a class="gallery-card" href="https://research.hachile.org/" aria-label="Open Hachile Research Portfolio">
+      <div class="gallery-left">
+        <div class="gallery-icon" aria-hidden="true">⌕</div>
+
+        <div class="gallery-copy">
+          <span class="gallery-label">Hachile Research</span>
+          <h2>Research</h2>
+          <p>Research, engineering projects, technical skills and selected achievements.</p>
+        </div>
+      </div>
+
+      <span class="gallery-enter">
+        View Research <span>→</span>
+      </span>
+    </a>
+
+    <a class="gallery-card" href="https://dev.hachile.org/" aria-label="Open Hachile Dev Projects">
+      <div class="gallery-left">
+        <div class="gallery-icon" aria-hidden="true">&lt;/&gt;</div>
+
+        <div class="gallery-copy">
+          <span class="gallery-label">Hachile Dev</span>
+          <h2>Dev</h2>
+          <p>Open-source projects, engineering prototypes and technical experiments.</p>
+        </div>
+      </div>
+
+      <span class="gallery-enter">
+        View Projects <span>→</span>
+      </span>
+    </a>
+
+    <a class="gallery-card" href="https://gallery.hachile.org/" aria-label="Open Hachile Gallery">
+      <div class="gallery-left">
+        <div class="gallery-icon" aria-hidden="true">▦</div>
+
+        <div class="gallery-copy">
+          <span class="gallery-label">Hachile Gallery</span>
+          <h2>Gallery</h2>
+          <p>A small visual archive of things I like, make, play and remember.</p>
+        </div>
+      </div>
+
+      <span class="gallery-enter">
+        View Gallery <span>→</span>
+      </span>
+    </a>
+
+    <footer class="landing-footer">
+      <span>home.hachile.org · ALPHA</span>
+      <span>Powered by GPDdev</span>
+    </footer>
+
+  </main>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const icon = document.getElementById('themeIcon');
+    const label = document.getElementById('themeLabel');
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    function syncThemeButton() {
+      const theme = document.documentElement.getAttribute('data-theme');
+      const isDark = theme === 'dark';
+
+      icon.textContent = isDark ? '☾' : '☀';
+      label.textContent = isDark ? 'Dark' : 'Light';
+
+      toggle.setAttribute(
+        'aria-label',
+        isDark ? '切换到亮色模式' : '切换到暗色模式'
+      );
+
+      themeMeta.setAttribute(
+        'content',
+        isDark ? '#070910' : '#dff7f4'
+      );
+    }
+
+    toggle.addEventListener('click', function () {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('hachile-theme', next);
+      syncThemeButton();
+    });
+
+    syncThemeButton();
+  </script>
+
+<!-- Cloudflare Web Analytics -->
+<script
+  type="module"
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "3c0896dc45254390b07fa67a037d1e5d"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+  
+</body>
+</html>
