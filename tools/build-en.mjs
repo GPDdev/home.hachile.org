@@ -55,6 +55,8 @@ const translations = {
   '同济 AI 大模型交流群管理员': 'Tongji AI and LLM Community admin', 'QQ 官方 Bot': 'Official QQ Bot',
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Sky 地图入口调整': 'Sky map navigation update',
+  '将 Sky 地图的坎特洛特入口改为按语言跳转至 home.hachile.org 对应页面。': 'Canterlot on the Sky map now opens the matching Chinese or English home.hachile.org page.',
   '头像环带渐变调整': 'Avatar ring gradient update',
   '保留头像图片完整呈现，仅在左侧扇环形成从深色到白色的渐变；移动端独立展示完整头像。': 'Kept the avatar image intact, added a dark-to-white gradient only to the left crescent, and displayed the full avatar separately on mobile.',
   'CV 页面主页入口调整': 'CV homepage link update',
