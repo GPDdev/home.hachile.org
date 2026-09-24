@@ -55,6 +55,8 @@ const translations = {
   '同济 AI 大模型交流群管理员': 'Tongji AI and LLM Community admin', 'QQ 官方 Bot': 'Official QQ Bot',
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '入口页名称更新': 'Entry page name update',
+  '将 Hachile 入口页的中英文桌面版与手机版浏览器标签名称统一改为 Hachile Portal。': 'Renamed the browser tab to Hachile Portal on the Chinese and English desktop and mobile entry pages.',
   'Sky 地图入口调整': 'Sky map navigation update',
   '将 Sky 地图的坎特洛特入口改为按语言跳转至 home.hachile.org 对应页面。': 'Canterlot on the Sky map now opens the matching Chinese or English home.hachile.org page.',
   '头像环带渐变调整': 'Avatar ring gradient update',
