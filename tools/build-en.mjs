@@ -58,6 +58,8 @@ const translations = {
   '同济 AI 大模型交流群管理员': 'Tongji AI and LLM Community admin', 'QQ 官方 Bot': 'Official QQ Bot',
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '门户页标题与入口卡片调整': 'Portal heading and entry card update',
+  '为 Hachile Portal 添加中英文欢迎标题，缩小简介文字，并降低三个入口卡片的高度。': 'Added Chinese and English welcome headings to Hachile Portal, reduced the introduction text size, and shortened the three entry cards.',
   '主页头像与自我介绍调整': 'Hero avatar and introduction update',
   '缩小并重新定位主页头像，移除头像渐变和角标；将 Sky 归入个人站点，并更新自我介绍与兴趣文字。': 'Resized and repositioned the hero avatar, removed its gradient and corner label, moved Sky into personal sites, and updated the introduction and interests.',
   '入口页名称更新': 'Entry page name update',
