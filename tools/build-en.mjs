@@ -55,6 +55,8 @@ const translations = {
   '同济 AI 大模型交流群管理员': 'Tongji AI and LLM Community admin', 'QQ 官方 Bot': 'Official QQ Bot',
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '入口页文字调整': 'Entry page text update',
+  '移除 Hachile 中文入口页桌面版和手机版的顶部标识文字。': 'Removed the top label from the Chinese Hachile entry page on desktop and mobile.',
   '图标与头像细节调整': 'Icon and avatar refinements',
   '头像沿圆周渐隐，更新联系方式和社交平台图标，并补充社群入口。': 'Faded the avatar around its circular edge, refreshed contact and social icons, and added a community link.',
   '站点与社群展示更新': 'Site and community display update',
