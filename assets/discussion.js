@@ -3,14 +3,14 @@
   const english = document.documentElement.lang === 'en';
   const labels = english ? {
     loading: 'Loading discussions…', empty: 'No topics yet. Start the first one.', unavailable: 'Discussions are temporarily unavailable. Please try again later.',
-    newTopic: 'Start a topic', reply: 'Reply to this topic', recent: 'Recent discussions', back: '← All topics', deleted: 'Deleted',
+    newTopic: 'Start a topic', reply: 'Reply to this topic', recent: 'Recent discussions', back: 'All topics', deleted: 'Deleted',
     replies: 'replies', delete: 'Delete my post', confirm: 'Delete this post?', posted: 'Published.', removed: 'Deleted.',
     verify: 'Please complete the verification.', rate_limited: 'Please wait a minute before posting again.',
     verification_failed: 'Verification failed. Please try again.', invalid_fields: 'Please check the length of your name and message.',
     not_yours: 'This browser does not hold the deletion key.', server_error: 'Server error. Please try again.'
   } : {
     loading: '正在加载讨论…', empty: '还没有主题，来发第一帖吧。', unavailable: '讨论区暂时不可用，请稍后再试。',
-    newTopic: '发布新主题', reply: '回复这个主题', recent: '最近的讨论', back: '← 返回全部主题', deleted: '已删除',
+    newTopic: '发布新主题', reply: '回复这个主题', recent: '最近的讨论', back: '返回全部主题', deleted: '已删除',
     replies: '条回复', delete: '删除我的帖子', confirm: '确定删除这条内容吗？', posted: '发布成功。', removed: '已删除。',
     verify: '请先完成人机验证。', rate_limited: '发帖太频繁，请一分钟后再试。',
     verification_failed: '验证失败，请重试。', invalid_fields: '请检查昵称和内容长度。',
