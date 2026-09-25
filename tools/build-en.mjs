@@ -59,6 +59,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '画廊方形网格与搜索': 'Square gallery grid and search',
+  '将画廊全部 64 张图片合并为方形缩略图网格，桌面端每行五张，并新增图片搜索与待补充说明。': 'Combined all 64 gallery images into a square-thumbnail grid with five columns on desktop, plus image search and placeholder captions.',
   '画廊返回入口调整': 'Gallery return links updated',
   '将 gallery.hachile.org 的两个返回入口改为 home.hachile.org，并移除页脚的 ALPHA 标识。': 'Changed both gallery.hachile.org return links to home.hachile.org and removed the ALPHA footer label.',
   '画廊图片扩充': 'Gallery image expansion',
