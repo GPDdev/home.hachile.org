@@ -59,6 +59,10 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '独立手机版上线': 'Standalone mobile pages launched',
+  '新增无侧边栏的中英文手机版页面，并在左上角站点名称下方显示 home.hachile.org。': 'Added Chinese and English mobile pages without a sidebar, and displayed home.hachile.org below the site name at the top left.',
+  'CV 英文版上线': 'English CV page launched',
+  '移除 cv.hachile.org 顶部的旧返回入口，改为中英文切换，并新增完整英文简历页面。': 'Replaced the old top return link on cv.hachile.org with a language switcher and added a complete English CV page.',
   '社群档案补充': 'Community archive update',
   '更新 groups.hachile.org 的社群目录，补充 QQ 群及跨平台社群入口。': 'Updated the groups.hachile.org directory with more QQ groups and cross-platform community links.',
   '社群与机器人账号入口补充': 'Community and bot links added',
@@ -115,3 +119,23 @@ const left = [...html.matchAll(/>([^<>]+)</g)].map(match => match[1].trim()).fil
 if (left.length) throw new Error(`Untranslated visible text: ${[...new Set(left)].join(', ')}`);
 mkdirSync(new URL('../en/', import.meta.url), { recursive: true });
 writeFileSync(new URL('../en/index.html', import.meta.url), html);
+
+function mobilePage(page, english) {
+  const menuStart = page.indexOf('  <button class="menu-button"');
+  const shellStart = page.indexOf('  <div class="site-shell"', menuStart);
+  if (menuStart < 0 || shellStart < 0) throw new Error('Mobile layout: sidebar markers not found');
+  page = page.slice(0, menuStart) + page.slice(shellStart);
+  const scriptStart = page.indexOf("    const menu = document.getElementById('menu-button');");
+  const themeStart = page.indexOf('    const themeButton =', scriptStart);
+  if (scriptStart < 0 || themeStart < 0) throw new Error('Mobile layout: menu script markers not found');
+  page = page.slice(0, scriptStart) + page.slice(themeStart);
+  return page.replace('<body>', '<body class="mobile-page">')
+    .replace('<header class="topbar"><div class="topbar-actions">', '<header class="topbar"><a class="brand" href="#top"><img class="brand-icon" src="/icon.png" alt=""><span><strong>Gunpowder Central</strong><small>home.hachile.org</small></span></a><div class="topbar-actions">')
+    .replaceAll('="./assets/', '="/assets/')
+    .replaceAll('="../assets/', '="/assets/')
+    .replace(english ? 'href="/" lang="zh-CN">中文' : 'href="/en/" lang="en">English', english ? 'href="/m/" lang="zh-CN">中文' : 'href="/m/en/" lang="en">English');
+}
+
+mkdirSync(new URL('../m/en/', import.meta.url), { recursive: true });
+writeFileSync(new URL('../m/index.html', import.meta.url), mobilePage(readFileSync(new URL('../index.html', import.meta.url), 'utf8'), false));
+writeFileSync(new URL('../m/en/index.html', import.meta.url), mobilePage(html, true));

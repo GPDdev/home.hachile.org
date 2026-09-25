@@ -7,30 +7,12 @@
   <meta name="description" content="Gunpowder Central: personal sites, communities, contact information, and discussions.">
   <title>Gunpowder Central</title>
   <link rel="icon" type="image/png" href="/icon.png">
-  <link rel="stylesheet" href="../assets/home.css">
+  <link rel="stylesheet" href="/assets/home.css">
   <script>document.documentElement.dataset.theme = localStorage.getItem('home-theme') || 'dark';</script>
 </head>
-<body>
-  <button class="menu-button" id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">☰ <span>Menu</span></button>
-  <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
-  <aside class="sidebar" id="sidebar" aria-label="站点目录">
-    <div class="sidebar-inner">
-      <a class="brand" href="#top"><img class="brand-icon" src="/icon.png" alt=""><span><strong>Gunpowder Central</strong><small>home.hachile.org</small></span></a>
-      <p class="sidebar-label">NAVIGATION / CONTENTS</p>
-      <nav class="side-nav" aria-label="主导航">
-        <details open><summary><span>01</span>About me</summary><div><a href="#about">Who I am</a><a href="#interests">Interests and goals</a></div></details>
-        <details open><summary><span>02</span>Frequent sites</summary><div><a href="#my-sites">Personal sites</a><a href="#my-projects">Communities and tools</a></div></details>
-        <details><summary><span>03</span>My communities</summary><div><a href="#groups-school">Campus and interests</a><a href="#groups-managed">Managed by Xiao Wu</a><a href="#groups-middle">School years</a></div></details>
-        <details><summary><span>04</span>Contact</summary><div><a href="#contact">Direct contact</a><a href="#social">Social media</a></div></details>
-        <a class="nav-root" href="#identities"><span>05</span>Other identities</a>
-        <a class="nav-root" href="#discussion"><span>06</span>Discussion</a>
-      </nav>
-      <div class="sidebar-bottom"><span class="status-light"></span> Version 1.3.13 <a href="https://hachile.org/">visit hachile.org</a></div>
-    </div>
-  </aside>
-
+<body class="mobile-page">
   <div class="site-shell" id="top">
-    <header class="topbar"><div class="topbar-actions"><button class="theme-toggle" type="button" aria-label="Toggle light or dark mode">◐ <span>Light mode</span></button><a class="language-link" href="/" lang="zh-CN">中文</a></div></header>
+    <header class="topbar"><a class="brand" href="#top"><img class="brand-icon" src="/icon.png" alt=""><span><strong>Gunpowder Central</strong><small>home.hachile.org</small></span></a><div class="topbar-actions"><button class="theme-toggle" type="button" aria-label="Toggle light or dark mode">◐ <span>Light mode</span></button><a class="language-link" href="/m/" lang="zh-CN">中文</a></div></header>
     <main class="content">
       <section class="hero">
         <div class="hero-copy"><p class="eyebrow"><span class="status-light"></span> HELLO, INTERNET</p><h1>Hi, I'm<br><em>Gunpowder</em></h1><p>Robotics undergraduate at Tongji University. Here you will find my websites, favorite tools, communities, and ideas I am exploring.</p><div class="hero-actions"><a class="button primary" href="#about">Meet me</a><a class="button quiet" href="#my-sites">Browse sites</a></div></div>
@@ -116,28 +98,28 @@
       </section>
 
       <section class="page-section" id="contact"><header class="section-heading"><span>04 / CONTACT</span><h2>Contact</h2><p>Feel free to reach out or exchange site links.</p></header>
-        <div class="contact-grid"><button class="contact-card copy-card" data-copy="1213956808"><img src="../assets/social/qq.svg" alt=""><span>QQ</span><strong>1213956808</strong><small>Click to copy</small></button><button class="contact-card copy-card" data-copy="1213956808"><img src="../assets/social/wechat.svg" alt=""><span>WeChat</span><strong>1213956808</strong><small>Click to copy</small></button><a class="contact-card" href="mailto:hejiale.ai@outlook.com"><img src="../assets/social/outlook.svg" alt=""><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>Send email</small></a></div>
+        <div class="contact-grid"><button class="contact-card copy-card" data-copy="1213956808"><img src="/assets/social/qq.svg" alt=""><span>QQ</span><strong>1213956808</strong><small>Click to copy</small></button><button class="contact-card copy-card" data-copy="1213956808"><img src="/assets/social/wechat.svg" alt=""><span>WeChat</span><strong>1213956808</strong><small>Click to copy</small></button><a class="contact-card" href="mailto:hejiale.ai@outlook.com"><img src="/assets/social/outlook.svg" alt=""><span>EMAIL</span><strong>hejiale.ai@outlook.com</strong><small>Send email</small></a></div>
         <div class="subsection" id="social"><h3>Social media <small>SOCIAL</small></h3><div class="social-grid">
-          <a href="https://space.bilibili.com/535607835"><img src="../assets/social/bilibili.png" alt="">Bilibili</a>
-          <a href="https://www.zhihu.com/people/gunpowder-92"><img src="../assets/social/zhihu.png" alt="">Zhihu</a>
-          <a href="https://f.yourtj.de/u/61"><img src="../assets/social/yourtj.png" alt="">YourTJ</a>
-          <a href="https://github.com/GPDdev"><img src="../assets/social/github.svg" alt="">GitHub</a>
-          <a href="https://www.instagram.com/Gpdinst/"><img src="../assets/social/instagram.png" alt="">Instagram</a>
-          <a href="https://www.reddit.com/u/Gunpowderedd"><img src="../assets/social/reddit.png" alt="">Reddit</a>
-          <a href="https://steamcommunity.com/profiles/76561199868768518"><img src="../assets/social/steam.png" alt="">Steam</a>
-          <a href="https://www.luogu.com.cn/user/316855"><img src="../assets/social/luogu.png" alt="">Luogu</a>
-          <a href="https://www.cnblogs.com/gunpowder/"><img src="../assets/social/cnblogs.svg" alt="">CNBlogs</a>
-          <button class="copy-card" data-copy="42283614369"><img src="../assets/social/xiaohongshu.svg" alt="">Xiaohongshu · 42283614369</button>
-          <button class="copy-card" data-copy="79492713231"><img src="../assets/social/douyin.png" alt="">Douyin · 79492713231</button>
-          <button class="copy-card" data-copy="3.s:/@SkybluePon@给你分享了贴吧号#5331523714#整段复制后打开贴吧即可找到Ta"><img src="../assets/social/tieba.png" alt=""><span class="social-text"><strong>Baidu Tieba</strong><small>SkybluePon · Tieba ID 5331523714</small></span><em>Copy</em></button>
-          <button class="copy-card" data-copy="PegasusBluie"><img src="../assets/social/netease.png" alt=""><span class="social-text"><strong>NetEase Cloud Music</strong><small>PegasusBluie</small></span><em>Copy</em></button>
-          <a href="https://x.com/GunpowderTwi" target="_blank" rel="noopener noreferrer"><img src="../assets/social/x.png" alt=""><span class="social-text"><strong>X / Twitter</strong><small>@GunpowderTwi</small></span></a>
-          <a href="https://discord.gg/R6hDRQgZ" target="_blank" rel="noopener noreferrer"><img src="../assets/social/discord.png" alt=""><span class="social-text"><strong>Discord</strong><small>discord.gg/R6hDRQgZ</small></span></a>
-          <a href="https://t.me/anontjer" target="_blank" rel="noopener noreferrer"><img src="../assets/social/telegram.svg" alt=""><span class="social-text"><strong>Telegram</strong><small>t.me/anontjer</small></span></a>
-          <a href="https://vk.ru/id763045144" target="_blank" rel="noopener noreferrer"><img src="../assets/social/vk.png" alt=""><span class="social-text"><strong>VK</strong><small>vk.ru/id763045144</small></span></a>
-          <a href="https://www.youtube.com/@Gunpowderytb" target="_blank" rel="noopener noreferrer"><img src="../assets/social/youtube.png" alt=""><span class="social-text"><strong>YouTube</strong><small>@Gunpowderytb</small></span></a>
-          <a href="https://www.facebook.com/profile.php?id=61579197617564" target="_blank" rel="noopener noreferrer"><img src="../assets/social/facebook.png" alt=""><span class="social-text"><strong>Facebook</strong><small>facebook.com · 61579197617564</small></span></a>
-          <a href="https://www.threads.com/@gpdinst" target="_blank" rel="noopener noreferrer"><img src="../assets/social/threads.png" alt=""><span class="social-text"><strong>Threads</strong><small>@gpdinst</small></span></a>
+          <a href="https://space.bilibili.com/535607835"><img src="/assets/social/bilibili.png" alt="">Bilibili</a>
+          <a href="https://www.zhihu.com/people/gunpowder-92"><img src="/assets/social/zhihu.png" alt="">Zhihu</a>
+          <a href="https://f.yourtj.de/u/61"><img src="/assets/social/yourtj.png" alt="">YourTJ</a>
+          <a href="https://github.com/GPDdev"><img src="/assets/social/github.svg" alt="">GitHub</a>
+          <a href="https://www.instagram.com/Gpdinst/"><img src="/assets/social/instagram.png" alt="">Instagram</a>
+          <a href="https://www.reddit.com/u/Gunpowderedd"><img src="/assets/social/reddit.png" alt="">Reddit</a>
+          <a href="https://steamcommunity.com/profiles/76561199868768518"><img src="/assets/social/steam.png" alt="">Steam</a>
+          <a href="https://www.luogu.com.cn/user/316855"><img src="/assets/social/luogu.png" alt="">Luogu</a>
+          <a href="https://www.cnblogs.com/gunpowder/"><img src="/assets/social/cnblogs.svg" alt="">CNBlogs</a>
+          <button class="copy-card" data-copy="42283614369"><img src="/assets/social/xiaohongshu.svg" alt="">Xiaohongshu · 42283614369</button>
+          <button class="copy-card" data-copy="79492713231"><img src="/assets/social/douyin.png" alt="">Douyin · 79492713231</button>
+          <button class="copy-card" data-copy="3.s:/@SkybluePon@给你分享了贴吧号#5331523714#整段复制后打开贴吧即可找到Ta"><img src="/assets/social/tieba.png" alt=""><span class="social-text"><strong>Baidu Tieba</strong><small>SkybluePon · Tieba ID 5331523714</small></span><em>Copy</em></button>
+          <button class="copy-card" data-copy="PegasusBluie"><img src="/assets/social/netease.png" alt=""><span class="social-text"><strong>NetEase Cloud Music</strong><small>PegasusBluie</small></span><em>Copy</em></button>
+          <a href="https://x.com/GunpowderTwi" target="_blank" rel="noopener noreferrer"><img src="/assets/social/x.png" alt=""><span class="social-text"><strong>X / Twitter</strong><small>@GunpowderTwi</small></span></a>
+          <a href="https://discord.gg/R6hDRQgZ" target="_blank" rel="noopener noreferrer"><img src="/assets/social/discord.png" alt=""><span class="social-text"><strong>Discord</strong><small>discord.gg/R6hDRQgZ</small></span></a>
+          <a href="https://t.me/anontjer" target="_blank" rel="noopener noreferrer"><img src="/assets/social/telegram.svg" alt=""><span class="social-text"><strong>Telegram</strong><small>t.me/anontjer</small></span></a>
+          <a href="https://vk.ru/id763045144" target="_blank" rel="noopener noreferrer"><img src="/assets/social/vk.png" alt=""><span class="social-text"><strong>VK</strong><small>vk.ru/id763045144</small></span></a>
+          <a href="https://www.youtube.com/@Gunpowderytb" target="_blank" rel="noopener noreferrer"><img src="/assets/social/youtube.png" alt=""><span class="social-text"><strong>YouTube</strong><small>@Gunpowderytb</small></span></a>
+          <a href="https://www.facebook.com/profile.php?id=61579197617564" target="_blank" rel="noopener noreferrer"><img src="/assets/social/facebook.png" alt=""><span class="social-text"><strong>Facebook</strong><small>facebook.com · 61579197617564</small></span></a>
+          <a href="https://www.threads.com/@gpdinst" target="_blank" rel="noopener noreferrer"><img src="/assets/social/threads.png" alt=""><span class="social-text"><strong>Threads</strong><small>@gpdinst</small></span></a>
         </div></div>
       </section>
 
@@ -182,17 +164,9 @@
     </main>
   </div>
   <div class="toast" aria-live="polite"></div>
-  <script src="../assets/app.js"></script>
-  <script src="../assets/discussion.js" defer></script>
+  <script src="/assets/app.js"></script>
+  <script src="/assets/discussion.js" defer></script>
   <script>
-    const menu = document.getElementById('menu-button');
-    const sidebar = document.getElementById('sidebar');
-    const scrim = document.getElementById('sidebar-scrim');
-    function closeMenu() { menu.setAttribute('aria-expanded', 'false'); sidebar.classList.remove('is-open'); scrim.hidden = true; }
-    menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); sidebar.classList.toggle('is-open', open); scrim.hidden = !open; });
-    scrim.addEventListener('click', closeMenu);
-    sidebar.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', closeMenu));
-    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
     const themeButton = document.querySelector('.theme-toggle');
     function updateThemeButton() {
       const light = document.documentElement.dataset.theme === 'light';
