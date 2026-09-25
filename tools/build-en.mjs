@@ -59,6 +59,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '社群档案补充': 'Community archive update',
+  '更新 groups.hachile.org 的社群目录，补充 QQ 群及跨平台社群入口。': 'Updated the groups.hachile.org directory with more QQ groups and cross-platform community links.',
   '社群与机器人账号入口补充': 'Community and bot links added',
   '在社群列表下新增 groups.hachile.org 入口，并在其他身份下新增 bot.hachile.org 入口。': 'Added a groups.hachile.org link below the community list and a bot.hachile.org link below other identities.',
   '网络社群档案上线': 'Community archive launch',
