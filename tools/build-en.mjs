@@ -59,6 +59,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Sky 地图新增工具箱入口': 'Toolbox link added to Sky map',
+  '在 Sky 地图的巴尔的马新增 tools.hachile.org 工具箱入口，并同步桌面与手机页面。': 'Added the tools.hachile.org toolbox link at Baltimare on the Sky map and updated both desktop and mobile pages.',
   '画廊方形网格与搜索': 'Square gallery grid and search',
   '将画廊全部 64 张图片合并为方形缩略图网格，桌面端每行五张，并新增图片搜索与待补充说明。': 'Combined all 64 gallery images into a square-thumbnail grid with five columns on desktop, plus image search and placeholder captions.',
   '画廊返回入口调整': 'Gallery return links updated',
