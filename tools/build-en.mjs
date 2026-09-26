@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Sky 地图场景动画扩展': 'More animated details on the Sky map',
+  '为海面加入漂移浪纹，让火山烟雾与尼亚加拉瀑布流动，并让火车定时沿铁路驶向巴尔的马。': 'Added drifting sea waves, moving volcano smoke and Neighagra Falls, plus a train that periodically follows the railway to Baltimare.',
   'Sky 地图新增三处站点入口': 'Three new destinations on the Sky map',
   '在水晶城、狮鹫岩与苹果鲁萨加入站点链接，并从底图移除旧罗盘、帆船、红箭头和红龙。': 'Added site links at Crystal Empire, Griffonstone, and Appleloosa, and removed the old compass, sailboats, red arrow, and dragon from the background map.',
   'The Hachile Project 展示页上线': 'The Hachile Project showcase launched',
