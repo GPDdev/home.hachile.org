@@ -59,6 +59,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '门户新增快速了解入口': 'Quick introduction added to the portal',
+  '在 Hachile Portal 中英文桌面版与手机版增加通往 hachile.org/gunpowder 的入口，并恢复此前误改的入口说明。': 'Added a link to hachile.org/gunpowder on the Chinese and English desktop and mobile portal pages, and restored the previous entry descriptions.',
   'Sky 小马谷增加社群与 Bot 入口': 'Community and Bot links added to Sky Ponyville',
   '在 Sky 的小马谷名册最前面加入 groups.hachile.org 和 bot.hachile.org 链接，并同步手机版。': 'Added groups.hachile.org and bot.hachile.org links at the top of the Sky Ponyville directory, including the mobile page.',
   'Sky 地图新增工具箱入口': 'Toolbox link added to Sky map',
