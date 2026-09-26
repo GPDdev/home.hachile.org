@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Sky 地图新增三处站点入口': 'Three new destinations on the Sky map',
+  '在水晶城、狮鹫岩与苹果鲁萨加入站点链接，并从底图移除旧罗盘、帆船、红箭头和红龙。': 'Added site links at Crystal Empire, Griffonstone, and Appleloosa, and removed the old compass, sailboats, red arrow, and dragon from the background map.',
   'The Hachile Project 展示页上线': 'The Hachile Project showcase launched',
   '新建 site.hachile.org，汇总 Hachile 站群的站点介绍、访问入口和 Home 更新日志。': 'Launched site.hachile.org with a directory of Hachile sites, direct links, and a copy of the Home changelog.',
   'Project Ponylonia 展示站上线': 'Project Ponylonia showcase launched',
