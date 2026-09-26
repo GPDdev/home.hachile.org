@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'The Hachile Project 展示页上线': 'The Hachile Project showcase launched',
+  '新建 site.hachile.org，汇总 Hachile 站群的站点介绍、访问入口和 Home 更新日志。': 'Launched site.hachile.org with a directory of Hachile sites, direct links, and a copy of the Home changelog.',
   'Project Ponylonia 展示站上线': 'Project Ponylonia showcase launched',
   '新建 ponylonia.hachile.org，展示机器马 Bot、个人穿越系统愿景及 Hachile Project。': 'Launched ponylonia.hachile.org to showcase the robot pony Bot, the personal crossover system vision, and Hachile Project.',
   '门户入口说明补充': 'Portal entry descriptions expanded',
