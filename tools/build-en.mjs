@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Sky 小马谷增加社群与 Bot 入口': 'Community and Bot links added to Sky Ponyville',
+  '在 Sky 的小马谷名册最前面加入 groups.hachile.org 和 bot.hachile.org 链接，并同步手机版。': 'Added groups.hachile.org and bot.hachile.org links at the top of the Sky Ponyville directory, including the mobile page.',
   '门户文案与身份卡片调整': 'Portal copy and identity cards updated',
   '更新 Hachile Portal 两个入口的说明，调整 Home 站点卡片字号与间距，并加入 Pegasus Bluie 身份。': 'Updated two Hachile Portal descriptions, adjusted Home card typography and spacing, and added the Pegasus Bluie identity.',
   'Sky 地图新增工具箱入口': 'Toolbox link added to Sky map',
