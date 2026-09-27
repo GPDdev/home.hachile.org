@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Hachile Bot 交流群入口': 'Hachile Bot community link added',
+  '在 bot.hachile.org 的 Hachile 卡片中加入 QQ 交流群 822082293，并支持点击复制群号。': 'Added QQ group 822082293 to the Hachile card on bot.hachile.org with click-to-copy support.',
   'Ponylonia 项目交流群上线': 'Ponylonia project group added',
   '在 ponylonia.hachile.org 增加 The Ponylonia Project 交流群 291927355。': 'Added The Ponylonia Project QQ group 291927355 to ponylonia.hachile.org.',
   'Sky 左下角加入单曲播放器': 'Single-track player added to Sky',
