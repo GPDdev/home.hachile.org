@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  'Hachile 宗旨展示': 'Hachile purpose added',
+  '在 The Hachile Project 首页加入网络身份、社群与连接理念的宗旨说明。': 'Added a purpose statement about online identities, communities, and connections to The Hachile Project homepage.',
   'Sky 地图场景动画扩展': 'More animated details on the Sky map',
   '为海面加入漂移浪纹，让火山烟雾与尼亚加拉瀑布流动，并让火车定时沿铁路驶向巴尔的马。': 'Added drifting sea waves, moving volcano smoke and Neighagra Falls, plus a train that periodically follows the railway to Baltimare.',
   'Sky 地图新增三处站点入口': 'Three new destinations on the Sky map',
