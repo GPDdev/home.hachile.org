@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '社群档案加入朋友评价': 'A friend’s comment added to the community archive',
+  '在 groups.hachile.org 首页加入一段 2025 年的群聊评价，并注明当时的建群与活跃群数量。': 'Added a 2025 group-chat comment to the groups.hachile.org homepage, noting the numbers of groups created and active at the time.',
   'Sky 英文字体恢复常规字重': 'Sky display font returned to regular weight',
   '英文模式的 Equestria 字体取消浏览器模拟加粗，桌面和手机端统一使用常规字重。': 'Removed synthetic bold from Equestria lettering in English mode on desktop and mobile.',
   '小马国地图更新背景与海浪': 'Equestria map background and waves updated',
