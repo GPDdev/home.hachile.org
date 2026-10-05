@@ -132,8 +132,8 @@ button.contact-card { cursor:pointer; }
 .identity-item { display:flex; flex-direction:column; align-items:flex-start; gap:5px; min-height:190px; padding:19px; text-align:left; border:1px solid var(--line); border-radius:9px; background:var(--panel); color:var(--text); cursor:pointer; }
 .identity-item:hover,.identity-item.copied { border-color:#5e8d80; }
 .identity-item span { color:#86c7b4; font:800 18px ui-monospace,Consolas,monospace; }
-.identity-item strong { font-size:22px; line-height:1.35; }
-.identity-item small { margin-top:auto; color:#84909d; font-size:16px; }
+.identity-item strong { font-size:13.2px; line-height:1.35; }
+.identity-item small { margin-top:auto; color:#84909d; font-size:9.6px; }
 .release { display:grid; grid-template-columns:170px 1fr; gap:22px; padding:25px; border:1px solid #3d695b; border-radius:10px; background:#15221f; }
 .release + .release { margin-top:10px; border-color:var(--line); background:var(--panel); }
 .release>div:first-child { display:flex; flex-direction:column; gap:5px; }

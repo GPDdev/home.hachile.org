@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '其他身份卡片字号调整': 'Other-identity card typography update',
+  '将 Home 其他身份卡片的说明和 QQ 号码文字缩小至原大小的 60%，身份名称保持不变。': 'Reduced the description and QQ number text in Home identity cards to 60% of their previous size while keeping account names unchanged.',
   '新增香港小马交流群': 'Hong Kong pony discussion group added',
   '在 groups.hachile.org 的小马社群目录加入香港小马交流群 1126362557。': 'Added the Hong Kong pony discussion group 1126362557 to the pony community directory on groups.hachile.org.',
   '社群目录新增四个交流群': 'Four discussion groups added to the community directory',
