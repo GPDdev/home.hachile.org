@@ -60,6 +60,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增香港小马交流群': 'Hong Kong pony discussion group added',
+  '在 groups.hachile.org 的小马社群目录加入香港小马交流群 1126362557。': 'Added the Hong Kong pony discussion group 1126362557 to the pony community directory on groups.hachile.org.',
   '社群目录新增四个交流群': 'Four discussion groups added to the community directory',
   '在 groups.hachile.org 收录小马与furry文化研究群、pony hypnosis交流群、小马tulpa交流群和清醒梦交流群。': 'Added the pony and furry culture, pony hypnosis, pony tulpa, and lucid dreaming discussion groups to groups.hachile.org.',
   '网页版桌宠动作与尺寸修正': 'Web pony movement and sizing corrected',
