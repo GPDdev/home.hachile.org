@@ -65,6 +65,8 @@ const translations = {
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
   '其他身份卡片字号调整': 'Other-identity card typography update',
   '个人站点加入 Site 并统一中文字体': 'Site added to personal sites and Chinese typography unified',
+  '恢复原有中文字体设置': 'Original Chinese typography restored',
+  '撤销 Home 全站中文字体统一改动，恢复此前的字体搭配；保留个人站点中的 Site 入口。': 'Reverted the unified Chinese font across Home and restored the previous typography while keeping Site in personal sites.',
   '在 Home 的个人站点加入 site.hachile.org，并将全站中文统一为首页介绍段落所用字体。': 'Added site.hachile.org to Home’s personal sites and unified Chinese text with the font used in the hero introduction.',
   '将 Home 其他身份卡片的说明和 QQ 号码文字缩小至原大小的 60%，身份名称保持不变。': 'Reduced the description and QQ number text in Home identity cards to 60% of their previous size while keeping account names unchanged.',
   '新增香港小马交流群': 'Hong Kong pony discussion group added',
