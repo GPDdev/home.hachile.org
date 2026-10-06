@@ -53,16 +53,18 @@ const translations = {
   '欢迎交换友链谢谢喵QAQ': 'Feel free to exchange site links, meow QAQ',
   '点击复制号码': 'Click to copy', '微信': 'WeChat', '发送邮件': 'Send email',
   '知乎': 'Zhihu', '洛谷': 'Luogu', '博客园': 'CNBlogs',
-  '小红书 · 42283614369': 'Xiaohongshu · 42283614369', '抖音 · 79492713231': 'Douyin · 79492713231',
-  '百度贴吧': 'Baidu Tieba', 'SkybluePon · 贴吧号 5331523714': 'SkybluePon · Tieba ID 5331523714', '网易云音乐': 'NetEase Cloud Music', '复制': 'Copy',
+  '小红书号：42283614369': 'Xiaohongshu ID: 42283614369', '抖音号：79492713231': 'Douyin ID: 79492713231',
+  '百度贴吧': 'Baidu Tieba', '贴吧号：5331523714': 'Tieba ID: 5331523714', '网易云音乐': 'NetEase Cloud Music', '复制': 'Copy',
   '在不同社群和项目里使用的其他账号。': 'Other accounts I use in different communities and projects.',
   '我在 Brony 社群的身份': 'My identity in the Brony community',
   '？？？': '???', '还有更多尚未解锁……': 'More identities yet to be unlocked…',
-  '开发号 · 让信息流动': 'Development account · Let information flow',
+  '让信息流动！': 'Let information flow!',
   '同济 AI 大模型交流群管理员': 'Tongji AI and LLM Community admin', 'QQ 官方 Bot': 'Official QQ Bot',
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增 wplace 交流群': 'wplace discussion group added',
+  '在 groups.hachile.org 的新增收录目录加入 wplace 交流群 1025330162。': 'Added the wplace discussion group 1025330162 to the newly added directory on groups.hachile.org.',
   '其他身份卡片字号调整': 'Other-identity card typography update',
   '个人站点加入 Site 并统一中文字体': 'Site added to personal sites and Chinese typography unified',
   '恢复原有中文字体设置': 'Original Chinese typography restored',
@@ -188,7 +190,7 @@ html = html.replace('<html lang="zh-CN">', '<html lang="en">')
   .replace('placeholder="写下你的想法…"', 'placeholder="Share your thoughts…"');
 html = html.replace(/>([^<>]+)</g, (full, inner) => {
   const text = inner.trim();
-  const translated = translations[text] ?? text.replace(/· 点击复制$/, '· click to copy');
+  const translated = translations[text] ?? text.replace(/点击复制$/, 'click to copy');
   return translated === text ? full : `>${inner.replace(text, translated)}<`;
 });
 const left = [...html.matchAll(/>([^<>]+)</g)].map(match => match[1].trim()).filter(text => /[\u3400-\u9fff]/.test(text) && text !== '中文');
