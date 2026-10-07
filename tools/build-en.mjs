@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '社群目录补充九个 QQ 群': 'Nine QQ groups added to the community directory',
+  '在 groups.hachile.org 新增九个 QQ 群，并注明部分群虽已转让群主，仍由我实际管理。': 'Added nine QQ groups to groups.hachile.org and noted that I still manage some groups whose ownership has been transferred.',
   '新增河大附中 QQ 频道': 'HDFZ QQ channel added',
   '在 groups.hachile.org 加入河大附中 QQ 频道，腾讯频道号 hdfzpd2222。': 'Added the HDFZ QQ channel to groups.hachile.org (Tencent channel ID: hdfzpd2222).',
   '新增 wplace 交流群': 'wplace discussion group added',
