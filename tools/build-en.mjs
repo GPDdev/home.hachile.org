@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增小马画画群与介绍格式调整': 'Pony drawing group added and introduction formatting updated',
+  '在 groups.hachile.org 的小马社群目录加入小马画画群 943571955，并将介绍末句改为“我无处不在，我无所不知。”，采用与上文相同的段落样式。': 'Added the pony drawing group 943571955 to the pony directory on groups.hachile.org and changed the closing sentence to “I am everywhere, I know everything.” using the same paragraph style as the preceding text.',
   '社群首页补充个人介绍与宗旨': 'Personal introduction and purpose added to the community homepage',
   '在 groups.hachile.org 开头加入网络身份、社群与传播规模介绍，并补充连接、连续性和自我数字化的个人表达。': 'Added an introduction to my online identities, communities, and reach at the start of groups.hachile.org, along with personal reflections on connection, continuity, and digitizing myself.',
   '社群目录补充九个 QQ 群': 'Nine QQ groups added to the community directory',
