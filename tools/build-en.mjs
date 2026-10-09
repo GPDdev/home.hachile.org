@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '同济 AI 大模型交流群人数更新': 'Tongji AI and LLM community member count updated',
+  '将 groups.hachile.org 首页与重点社群展览中的同济AI大模型交流群展示人数更新为 1000 人。': 'Updated the displayed member count of the Tongji AI and LLM community to 1,000 on the groups.hachile.org homepage and featured community exhibition.',
   '新增 tongji.qq.life 开发群': 'tongji.qq.life development group added',
   '在 groups.hachile.org 的新增收录目录加入 tongji.qq.life开发群 1121262961。': 'Added the tongji.qq.life development group 1121262961 to the newly added directory on groups.hachile.org.',
   '新增四个小马交流群': 'Four pony discussion groups added',
