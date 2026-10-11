@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增小马哲学交流群': 'Pony philosophy discussion group added',
+  '在 groups.hachile.org 的小马社群目录加入小马哲学交流群 451879743，小马社群增至 25 个，QQ 群增至 98 个，网络社群总数更新为 102 个。': 'Added the pony philosophy discussion group 451879743 to the pony directory on groups.hachile.org, bringing the totals to 25 pony communities, 98 QQ groups, and 102 online communities.',
   '同济账号证明精简为独立站点': 'Tongji account proof simplified into a standalone site',
   '新建 tj.hachile.org，仅保留生成证明码和验证证明码；不加入校园导航、搜索或其他栏目。复用匿名一次性证明的安全后端，认证待学校批准后开放；站点目录入口同步调整。': 'Created tj.hachile.org with only proof code generation and verification, without campus navigation, search, or other sections. It reuses the secure backend for anonymous one-time proofs; authentication will open after university approval. The site directory entry was updated accordingly.',
   '同济导航与账号证明模板上线': 'Tongji navigation and account proof template launched',
