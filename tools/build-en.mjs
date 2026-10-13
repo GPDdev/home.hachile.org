@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '重点社群展示更新与 AI 群扩展': 'Featured communities updated and AI groups expanded',
+  '将 groups.hachile.org 的同济国豪交流社群与同济AI大模型交流社群均更新为 2000+ 人，补充组成介绍，第三项改为“拭目以待”；收录 AI 二群和三群，合计 100 个 QQ 群、104 个网络社群。': 'Updated both the Tongji Guohao and Tongji AI and LLM communities on groups.hachile.org to 2,000+ members, described their constituent groups, and changed the third feature to “Stay tuned.” Added AI groups two and three, bringing the totals to 100 QQ groups and 104 online communities.',
   '新增小马哲学交流群': 'Pony philosophy discussion group added',
   '在 groups.hachile.org 的小马社群目录加入小马哲学交流群 451879743，小马社群增至 25 个，QQ 群增至 98 个，网络社群总数更新为 102 个。': 'Added the pony philosophy discussion group 451879743 to the pony directory on groups.hachile.org, bringing the totals to 25 pony communities, 98 QQ groups, and 102 online communities.',
   '同济账号证明精简为独立站点': 'Tongji account proof simplified into a standalone site',
