@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增小马厨艺交流群': 'Pony cooking discussion group added',
+  '在 groups.hachile.org 的 MLP交流群分类加入小马厨艺交流群 1130319686，分类增至 29 个，目录增至 104 个 QQ 群，网络社群总数更新为 108 个。': 'Added the pony cooking discussion group 1130319686 to the MLP category on groups.hachile.org, bringing the category to 29 groups, the directory to 104 QQ groups, and the total to 108 online communities.',
   '确认 AI 学术讨论群群号': 'AI academic discussion group number confirmed',
   '确认 689315680 为同济AI大模型交流三群（学术讨论群），同步目录和展览页；二群群号暂待补充，避免重复使用三群号码。社群总数不变。': 'Confirmed 689315680 as Tongji AI and LLM group three for academic discussion and updated the directory and exhibition. Group two awaits its number so that it does not reuse group three’s number. Community totals remain unchanged.',
   '社群分类整理与 AI 群用途更新': 'Community categories reorganized and AI group roles updated',
