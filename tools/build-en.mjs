@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '社群分类整理与 AI 群用途更新': 'Community categories reorganized and AI group roles updated',
+  '在 groups.hachile.org 按名单调整校园、早期与 MLP 分类，新增两个小五代管群；区分 AI 交流、学术讨论与同济内部群，将 1127773531 更正为四群，三群群号待补充。合计 103 个 QQ 群、107 个网络社群。': 'Reorganized the campus, early, and MLP categories on groups.hachile.org and added two groups managed by Xiao Wu. Clarified the AI discussion, academic, and Tongji-only group roles, corrected 1127773531 to group four, and left group three awaiting its number. Totals: 103 QQ groups and 107 online communities.',
   '重点社群展示更新与 AI 群扩展': 'Featured communities updated and AI groups expanded',
   '将 groups.hachile.org 的同济国豪交流社群与同济AI大模型交流社群均更新为 2000+ 人，补充组成介绍，第三项改为“拭目以待”；收录 AI 二群和三群，合计 100 个 QQ 群、104 个网络社群。': 'Updated both the Tongji Guohao and Tongji AI and LLM communities on groups.hachile.org to 2,000+ members, described their constituent groups, and changed the third feature to “Stay tuned.” Added AI groups two and three, bringing the totals to 100 QQ groups and 104 online communities.',
   '新增小马哲学交流群': 'Pony philosophy discussion group added',
