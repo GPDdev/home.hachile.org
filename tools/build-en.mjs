@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增同济QQbot交流群': 'Tongji QQbot discussion group added',
+  '在 groups.hachile.org 的校园与兴趣分类加入同济QQbot交流群 1128188987，分类增至 31 个，目录增至 105 个 QQ 群，网络社群总数更新为 109 个。': 'Added the Tongji QQbot discussion group 1128188987 to the Campus and Interests category on groups.hachile.org, bringing the category to 31 groups, the directory to 105 QQ groups, and the total to 109 online communities.',
   '补齐 AI 二群群号': 'AI group two number added',
   '补齐同济AI大模型交流二群群号 832504586，同步目录与展览页的复制入口；三群（学术讨论群）保留 689315680，四群保留 1127773531，社群总数不变。': 'Added 832504586 for Tongji AI and LLM group two and enabled copying in the directory and exhibition. Group three for academic discussion remains 689315680, and group four remains 1127773531. Community totals are unchanged.',
   '新增小马厨艺交流群': 'Pony cooking discussion group added',
