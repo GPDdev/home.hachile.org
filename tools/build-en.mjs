@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布视频异常检测综述笔记': 'Video anomaly detection survey notes published',
+  '在 blog.hachile.org 发布从 DNN 到 MLLM 的视频异常检测综述阅读笔记，整理方法分类、异常理解和待核对问题。': 'Published video anomaly detection survey notes on blog.hachile.org, covering methods from DNNs to MLLMs, anomaly understanding, and open reading questions.',
   '新增同济QQbot交流群': 'Tongji QQbot discussion group added',
   '在 groups.hachile.org 的校园与兴趣分类加入同济QQbot交流群 1128188987，分类增至 31 个，目录增至 105 个 QQ 群，网络社群总数更新为 109 个。': 'Added the Tongji QQbot discussion group 1128188987 to the Campus and Interests category on groups.hachile.org, bringing the category to 31 groups, the directory to 105 QQ groups, and the total to 109 online communities.',
   '补齐 AI 二群群号': 'AI group two number added',
