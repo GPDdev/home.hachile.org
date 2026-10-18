@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布反向传播与 Transformer 笔记': 'Backpropagation and Transformer notes published',
+  '在 blog.hachile.org 发布反向传播与 Transformer 学习笔记，保留原文并按反向传播、词嵌入、注意力和多层感知器分节排版。': 'Published backpropagation and Transformer study notes on blog.hachile.org, preserving the original text in sections on backpropagation, embeddings, attention, and multilayer perceptrons.',
   'Furpony Institute 三语文化博客上线': 'Furpony Institute trilingual culture journal launched',
   '国豪野史增加 QQ 交流群': 'Guohao history QQ group added',
   '在 ghc.hachile.org 的页脚及关于页面公布国豪野史 QQ 交流群 1109714588。': 'Added the Guohao history QQ group 1109714588 to the footer and About page of ghc.hachile.org.',
