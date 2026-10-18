@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增同济薄肌俱乐部与 Furpony Institüt': 'Tongji Lean Muscle Club and Furpony Institüt added',
+  '在 groups.hachile.org 的校园与兴趣分类加入同济薄肌俱乐部 1128552670，在 MLP交流群分类加入 Furpony Institüt 1130961239；合计 107 个 QQ 群、111 个网络社群。': 'Added Tongji Lean Muscle Club 1128552670 to Campus and Interests and Furpony Institüt 1130961239 to the MLP category on groups.hachile.org. Totals: 107 QQ groups and 111 online communities.',
   '发布视频异常检测综述笔记': 'Video anomaly detection survey notes published',
   '在 blog.hachile.org 发布从 DNN 到 MLLM 的视频异常检测综述阅读笔记，整理方法分类、异常理解和待核对问题。': 'Published video anomaly detection survey notes on blog.hachile.org, covering methods from DNNs to MLLMs, anomaly understanding, and open reading questions.',
   '新增同济QQbot交流群': 'Tongji QQbot discussion group added',
