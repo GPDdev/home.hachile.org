@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '新增炒股群': 'Stock trading group added',
+  '在 groups.hachile.org 的校园与兴趣分类加入炒股群 1040957207，分类增至 33 个，目录增至 108 个 QQ 群，网络社群总数更新为 112 个。': 'Added the stock trading group 1040957207 to Campus and Interests on groups.hachile.org, bringing the category to 33 groups, the directory to 108 QQ groups, and the total to 112 online communities.',
   '发布反向传播与 Transformer 笔记': 'Backpropagation and Transformer notes published',
   '在 blog.hachile.org 发布反向传播与 Transformer 学习笔记，保留原文并按反向传播、词嵌入、注意力和多层感知器分节排版。': 'Published backpropagation and Transformer study notes on blog.hachile.org, preserving the original text in sections on backpropagation, embeddings, attention, and multilayer perceptrons.',
   'Furpony Institute 三语文化博客上线': 'Furpony Institute trilingual culture journal launched',
