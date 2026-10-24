@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布英国研学感言与牛津游记': 'UK study trip reflections and Oxford travel notes published',
+  '在 blog.hachile.org 发布《英国研学个人感言》和《草坪、彩虹，和一座没有围墙的大学》，保留游记中的两张风景照片。': 'Published UK Study Trip Reflections and Lawns, Rainbows, and a University Without Walls on blog.hachile.org, including two landscape photographs in the travel notes.',
   '新增炒股群': 'Stock trading group added',
   '在 groups.hachile.org 的校园与兴趣分类加入炒股群 1040957207，分类增至 33 个，目录增至 108 个 QQ 群，网络社群总数更新为 112 个。': 'Added the stock trading group 1040957207 to Campus and Interests on groups.hachile.org, bringing the category to 33 groups, the directory to 108 QQ groups, and the total to 112 online communities.',
   '发布反向传播与 Transformer 笔记': 'Backpropagation and Transformer notes published',
