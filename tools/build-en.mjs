@@ -63,6 +63,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '博客首页精简与博客园旧文迁移': 'Blog homepage streamlined and CNBlogs archive migrated',
+  '精简 blog.hachile.org 的导航和首页标题，缩小个人头像，将主站入口指向 home.hachile.org，置顶文章改名为《欢迎来到我的博客》；迁移博客园全部 6 篇公开随笔，保留原始发布日期、代码和 4 张插图。': 'Streamlined the navigation and homepage title on blog.hachile.org, reduced the profile avatar, pointed the main-site link to home.hachile.org, and renamed the pinned post Welcome to My Blog. Migrated all six public CNBlogs posts with their original publication dates, code, and four illustrations.',
   '发布英国研学感言与牛津游记': 'UK study trip reflections and Oxford travel notes published',
   '在 blog.hachile.org 发布《英国研学个人感言》和《草坪、彩虹，和一座没有围墙的大学》，保留游记中的两张风景照片。': 'Published UK Study Trip Reflections and Lawns, Rainbows, and a University Without Walls on blog.hachile.org, including two landscape photographs in the travel notes.',
   '新增炒股群': 'Stock trading group added',
