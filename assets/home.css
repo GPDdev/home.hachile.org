@@ -100,8 +100,6 @@ section[id],div[id] { scroll-margin-top:90px; }
 .group-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
 .group-card { display:grid; grid-template-columns:30px minmax(0,1fr); align-content:center; column-gap:9px; row-gap:4px; min-height:86px; width:100%; padding:12px; text-align:left; color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:9px; }
 .group-card::before { content:"👥"; display:grid; grid-column:1; grid-row:1 / span 2; place-items:center; width:30px; height:30px; border-radius:8px; background:#223831; font-size:16px; }
-#groups-managed .group-card::before { content:"🤖"; }
-#groups-middle .group-card::before { content:"🎒"; }
 .group-card[data-icon]::before { content:attr(data-icon); }
 button.group-card { cursor:pointer; }
 button.group-card:hover,a.group-card:hover,.group-card.copied { border-color:#608e7e; background:#1a2827; }

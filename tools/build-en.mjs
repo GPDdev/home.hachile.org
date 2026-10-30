@@ -67,6 +67,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '社群卡片连续排列': 'Community cards arranged in one continuous grid',
+  '移除 Home 社群分类标题与侧边栏子项，将 23 个群聊和全部社群入口合并为同一个连续网格，保持原有顺序与图标。': 'Removed community category headings and sidebar sublinks from Home, combining the 23 groups and the all-communities link into one continuous grid while preserving their order and icons.',
   '主页社群精选与微信号更新': 'Homepage community selection and WeChat ID updated',
   'Home 的社群展示精简为 23 个，更新社群介绍和三个群名，新增高亮的全部社群入口，并将微信号改为 gpddev。': 'Reduced Home’s community selection to 23 groups, updated the introduction and three group names, added a highlighted link to all communities, and changed the WeChat ID to gpddev.',
   '补充社群研究方向': 'Community research interests added',
