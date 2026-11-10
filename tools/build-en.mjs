@@ -68,6 +68,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布高校有偿投票活动记录': 'Campus paid-voting observations published',
+  '在 blog.hachile.org 发布高校有偿投票活动的脱敏记录，保留活动规则、作者观察与建议，文章日期为 2026 年 3 月 15 日。': 'Published an anonymized account of a campus paid-voting event on blog.hachile.org, covering event rules, the author’s observations, and suggestions. The post is dated March 15, 2026.',
   '发布《外川沙行纪》': 'Waichuansha travel notes published',
   '在 blog.hachile.org 发布《外川沙行纪——致愿意追寻宁静与伟大的我们》，保留正文、四张配图和图注，文章日期为 2025 年 11 月 22 日。': 'Published the Waichuansha travel notes on blog.hachile.org, preserving the text, four photos and captions, with a post date of November 22, 2025.',
   '发布未来技术班公众号停运公告存档': 'Future Technology Class WeChat farewell archived',
