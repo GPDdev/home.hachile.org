@@ -68,6 +68,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布未来技术班公众号停运公告存档': 'Future Technology Class WeChat farewell archived',
+  '在 blog.hachile.org 存档《同济大学未来技术班公众号将停止运营》，保留原发布日期、正文和配图。': 'Archived the Tongji University Future Technology Class WeChat farewell on blog.hachile.org, with its original publication date, text, and photo.',
   'CV 增加 Research 入口': 'Research link added to CV',
   '在 cv.hachile.org 的项目经历中加入 research.hachile.org 入口，并同步中英文页面。': 'Added a research.hachile.org link to the project experience section on cv.hachile.org in both Chinese and English.',
   'Tools 收录 HACH News': 'HACH News added to Tools',
