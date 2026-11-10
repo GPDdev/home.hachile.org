@@ -68,6 +68,8 @@ const translations = {
   '小五': 'Xiao Wu', '社群管理 Bot': 'Community management bot',
   '查看机器人账号请访问': 'To see bot accounts, visit',
   '展开查看完整更新日志': 'Expand full changelog', '首页布局调整': 'Homepage layout update',
+  '发布《外川沙行纪》': 'Waichuansha travel notes published',
+  '在 blog.hachile.org 发布《外川沙行纪——致愿意追寻宁静与伟大的我们》，保留正文、四张配图和图注，文章日期为 2025 年 11 月 22 日。': 'Published the Waichuansha travel notes on blog.hachile.org, preserving the text, four photos and captions, with a post date of November 22, 2025.',
   '发布未来技术班公众号停运公告存档': 'Future Technology Class WeChat farewell archived',
   '在 blog.hachile.org 存档《同济大学未来技术班公众号将停止运营》，保留原发布日期、正文和配图。': 'Archived the Tongji University Future Technology Class WeChat farewell on blog.hachile.org, with its original publication date, text, and photo.',
   'CV 增加 Research 入口': 'Research link added to CV',
