@@ -1,6 +1,13 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'CV 补充大一综合成绩排名': 'First-year academic rankings added to CV',
+  '在 cv.hachile.org 的个人信息中补充大一阶段学院排名前5%、专业排名前10%，并同步英文版。': 'Added first-year rankings in the top 5% of the college and top 10% of the major to the personal information on cv.hachile.org, including the English version.',
+  'Tools 收录 USAddressGen': 'USAddressGen added to Tools',
+  '在 tools.hachile.org 的地图与网络栏目加入 USAddressGen，提供美国地址测试数据生成入口。': 'Added USAddressGen to the Maps and Network section on tools.hachile.org for generating US address test data.',
+  '开发项目展示': 'Development portfolio',
+  '开发项目入口接入 Forkfolio': 'Development project links added for Forkfolio',
+  '将 Home 首页的 Dev 快捷入口指向 gpddev.forkfolio.dev，并在个人站点中新增 Forkfolio 卡片，同步中英文和手机版。': 'Pointed Home’s Dev shortcut to gpddev.forkfolio.dev and added a Forkfolio card under Personal sites on Chinese, English, and mobile pages.',
   '目录': 'Menu', '导航 / CONTENTS': 'NAVIGATION / CONTENTS',
   '自我介绍': 'About me', '关于我': 'Who I am', '兴趣与方向': 'Interests and goals',
   '我的常用网站': 'My websites', '常用站点': 'Frequent sites', '个人站点': 'Personal sites', '社群与工具': 'Communities and tools',
