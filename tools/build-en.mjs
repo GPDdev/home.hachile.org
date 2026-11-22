@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Dev 更新 TapLoop 轻循': 'TapLoop updated on Dev',
+  '在 dev.hachile.org 将 Tongji TapLoop 的空仓库占位更新为 Android 点击辅助工具介绍，加入真实界面截图，同步中英文文案并刷新项目 Star 排序。': 'Replaced the empty Tongji TapLoop placeholder on dev.hachile.org with its Android tap-assistant description and actual interface screenshot. Updated both languages and refreshed the project star ranking.',
   'CV 补充采访报道与项目源码': 'Media coverage and project repositories added to CV',
   '在 cv.hachile.org 增加两篇采访与报道入口，为数字孪生、IASR、AegisDrive、座椅压力分析、高校教师信息系统和锂枝晶模拟项目补充 GitHub 链接，同步中英文页面。': 'Added two media features and GitHub links for the digital twin, IASR, AegisDrive, seat-pressure analysis, university faculty information, and lithium-dendrite simulation projects on cv.hachile.org, in both languages.',
   'Tools 增加站内搜索和学习资源': 'Tools search and resources expanded',
