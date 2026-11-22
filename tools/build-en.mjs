@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Furpony Institute 文化刊物改版': 'Furpony Institute cultural journal redesigned',
+  '重设计 furpony.hachile.org 的三语首页与文章页，采用钴蓝暖橙配色、大字号刊头和原创狐狸小马插画；保留全部原文、译文及投稿入口，补齐仓库说明与代码许可证。': 'Redesigned the three-language homepages and articles on furpony.hachile.org with cobalt blue and warm orange, a large masthead and original fox-and-pony artwork. Preserved all original text, translations and submission contacts, and added repository documentation and a code license.',
   'Pony 主页温馨改版与英文版': 'Pony homepage refreshed with English support',
   '统一 pony.hachile.org 的中文字体，英文使用 Equestria，调整为浅色手帐风格并新增 /en/ 英文页；修复域名证书并开启 HTTPS 自动跳转，保留音乐与桌宠交互。': 'Unified Chinese typography on pony.hachile.org, applied Equestria to English text, and introduced a light scrapbook style with an English page at /en/. Fixed the domain certificate and enabled automatic HTTPS redirects, preserving music and pony companion interactions.',
   'Site 树主题改版': 'Tree-themed Site redesign',
