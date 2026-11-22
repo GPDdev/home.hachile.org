@@ -5,6 +5,8 @@ const translations = {
   '在 cv.hachile.org 增加两篇采访与报道入口，为数字孪生、IASR、AegisDrive、座椅压力分析、高校教师信息系统和锂枝晶模拟项目补充 GitHub 链接，同步中英文页面。': 'Added two media features and GitHub links for the digital twin, IASR, AegisDrive, seat-pressure analysis, university faculty information, and lithium-dendrite simulation projects on cv.hachile.org, in both languages.',
   'Tools 增加站内搜索和学习资源': 'Tools search and resources expanded',
   '将 Bing 搜索改为站内工具筛选，更新导航图标，并收录编程、人工智能、科研与校园开发资源。': 'Replaced Bing search with a local tool filter, updated navigation icons, and added programming, AI, research, and campus development resources.',
+  '新增济莫聚餐群': 'Jimo dining group added',
+  '在 groups.hachile.org 的校园与兴趣分类加入济莫聚餐群 1059104967，分类增至 34 个，目录增至 109 个 QQ 群，网络社群总数更新为 113 个。': 'Added the Jimo dining group 1059104967 to Campus and Interests on groups.hachile.org, bringing the category to 34 groups, the directory to 109 QQ groups, and the total to 113 online communities.',
   'Dev 项目展示重制': 'Dev project showcase redesigned',
   '重制 dev.hachile.org 的项目展示，使用项目截图与专属封面；调整项目名单，取消 IASR 置顶，并在每次发布时更新 GitHub Star、按数量排序。保留中英文切换与手机适配。': 'Redesigned dev.hachile.org with project screenshots and individual covers. Updated the project list, removed the IASR pin, and added GitHub star refresh and sorting on every deployment. Retained English switching and mobile layouts.',
   'CV 补充大一综合成绩排名': 'First-year academic rankings added to CV',
