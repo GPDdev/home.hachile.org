@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Pony 主页温馨改版与英文版': 'Pony homepage refreshed with English support',
+  '统一 pony.hachile.org 的中文字体，英文使用 Equestria，调整为浅色手帐风格并新增 /en/ 英文页；修复域名证书并开启 HTTPS 自动跳转，保留音乐与桌宠交互。': 'Unified Chinese typography on pony.hachile.org, applied Equestria to English text, and introduced a light scrapbook style with an English page at /en/. Fixed the domain certificate and enabled automatic HTTPS redirects, preserving music and pony companion interactions.',
   'Site 树主题改版': 'Tree-themed Site redesign',
   '以植物手记风格重做 site.hachile.org，加入可点击的树形分组、枝条式站点目录与年轮更新日志，保留全部站点入口和宗旨原文，适配手机与键盘操作。': 'Redesigned site.hachile.org as a botanical notebook with clickable tree branches, a branching site directory, and growth-ring release history. Preserved every site link and the original purpose text, with mobile layouts and keyboard navigation.',
   'Dev 更新 TapLoop 轻循': 'TapLoop updated on Dev',
