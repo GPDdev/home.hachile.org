@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Site 树主题改版': 'Tree-themed Site redesign',
+  '以植物手记风格重做 site.hachile.org，加入可点击的树形分组、枝条式站点目录与年轮更新日志，保留全部站点入口和宗旨原文，适配手机与键盘操作。': 'Redesigned site.hachile.org as a botanical notebook with clickable tree branches, a branching site directory, and growth-ring release history. Preserved every site link and the original purpose text, with mobile layouts and keyboard navigation.',
   'Dev 更新 TapLoop 轻循': 'TapLoop updated on Dev',
   '在 dev.hachile.org 将 Tongji TapLoop 的空仓库占位更新为 Android 点击辅助工具介绍，加入真实界面截图，同步中英文文案并刷新项目 Star 排序。': 'Replaced the empty Tongji TapLoop placeholder on dev.hachile.org with its Android tap-assistant description and actual interface screenshot. Updated both languages and refreshed the project star ranking.',
   'CV 补充采访报道与项目源码': 'Media coverage and project repositories added to CV',
