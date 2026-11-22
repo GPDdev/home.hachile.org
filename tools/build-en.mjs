@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Ponylonia 项目手记改版': 'Ponylonia project journal redesigned',
+  '重新设计 ponylonia.hachile.org，以暖白纸面、深蓝星空和原创双翼星图呈现 Bot、个人穿越系统愿景与 The Hachile Project；保留全部站点入口和 QQ 联系方式，加入号码复制与手机适配。': 'Redesigned ponylonia.hachile.org with warm paper, a deep-blue sky and original winged-star artwork to introduce the Bot, the personal cross-world system vision and The Hachile Project. Preserved every site link and QQ contact, with number copying and responsive mobile layouts.',
   'Furpony Institute 文化刊物改版': 'Furpony Institute cultural journal redesigned',
   '重设计 furpony.hachile.org 的三语首页与文章页，采用钴蓝暖橙配色、大字号刊头和原创狐狸小马插画；保留全部原文、译文及投稿入口，补齐仓库说明与代码许可证。': 'Redesigned the three-language homepages and articles on furpony.hachile.org with cobalt blue and warm orange, a large masthead and original fox-and-pony artwork. Preserved all original text, translations and submission contacts, and added repository documentation and a code license.',
   'Research 成果索引改版': 'Research project index redesign',
