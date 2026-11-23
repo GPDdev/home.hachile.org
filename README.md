@@ -1,6 +1,6 @@
 # Gunpowder Central
 
-<div align="center"><img alt="Tests: Node test suite" src="https://img.shields.io/badge/tests-node%20test-blue"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache--2.0-green"><img alt="Version: 1.10.20" src="https://img.shields.io/badge/version-1.10.20-lightgrey"><img alt="Language: HTML and JavaScript" src="https://img.shields.io/badge/language-HTML%20%2F%20JavaScript-orange"></div>
+<div align="center"><img alt="Tests: Node test suite" src="https://img.shields.io/badge/tests-node%20test-blue"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache--2.0-green"><img alt="Version: 1.10.22" src="https://img.shields.io/badge/version-1.10.22-lightgrey"><img alt="Language: HTML and JavaScript" src="https://img.shields.io/badge/language-HTML%20%2F%20JavaScript-orange"></div>
 
 [访问网站](https://home.hachile.org/)
 

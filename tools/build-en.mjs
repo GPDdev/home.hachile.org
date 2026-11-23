@@ -1,6 +1,10 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Dev 收录 hanhua 汉化工具': 'hanhua added to Dev',
+  '在 dev.hachile.org 加入 hanhua，提供游戏与影视汉化介绍、《The Question》中文实机截图和演示站入口，同步中英文文案并刷新 14 个项目的 GitHub Star 排序。': 'Added hanhua to dev.hachile.org with game and film localization details, a Chinese in-game screenshot of The Question, and a demo link. Updated both languages and refreshed GitHub star rankings for all 14 projects.',
+  '小马国地图动效更新': 'Equestria map animation update',
+  '瀑布水流沿两级岩壁落下，烟从火山口升起。列车沿铁轨转弯，帆船和浮云的轮廓与底图衔接。': 'Water follows the two falls, smoke curls from the crater, and trains follow the rails around bends. Sailboats and clouds use cutouts matched to the map artwork.',
   'Ponylonia 项目手记改版': 'Ponylonia project journal redesigned',
   '重新设计 ponylonia.hachile.org，以暖白纸面、深蓝星空和原创双翼星图呈现 Bot、个人穿越系统愿景与 The Hachile Project；保留全部站点入口和 QQ 联系方式，加入号码复制与手机适配。': 'Redesigned ponylonia.hachile.org with warm paper, a deep-blue sky and original winged-star artwork to introduce the Bot, the personal cross-world system vision and The Hachile Project. Preserved every site link and QQ contact, with number copying and responsive mobile layouts.',
   'Furpony Institute 文化刊物改版': 'Furpony Institute cultural journal redesigned',
