@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '站群命令行终端上线': 'Hachile Terminal launched',
+  '在 terminal.hachile.org 用 Linux 风格命令浏览站点目录、阅读公开文章和项目、跨站搜索正文，并打开原站与媒体链接。': 'Browse the site directory, read articles and projects, search across sites, and open original pages and media with Linux-style commands at terminal.hachile.org.',
   'Dev 收录 hanhua 汉化工具': 'hanhua added to Dev',
   '在 dev.hachile.org 加入 hanhua，提供游戏与影视汉化介绍、《The Question》中文实机截图和演示站入口，同步中英文文案并刷新 14 个项目的 GitHub Star 排序。': 'Added hanhua to dev.hachile.org with game and film localization details, a Chinese in-game screenshot of The Question, and a demo link. Updated both languages and refreshed GitHub star rankings for all 14 projects.',
   '小马国地图动效更新': 'Equestria map animation update',
