@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '循济 TongjiTap 官网发布': 'TongjiTap app website launched',
+  '在 tap.hachile.org 查看循济的四个 Android 界面、下载正式版 APK，并查阅点击编排、音乐调速和 Wi-Fi 切换的使用指南。': 'Preview the four Android screens at tap.hachile.org, download the release APK, and find guides to tap sequences, music playback speed, and Wi-Fi switching.',
   '首页加入 Terminal Me 按钮': 'Terminal Me button added to Home',
   '将 Home 首页两个引导按钮合并为指向 terminal.hachile.org 的 Terminal Me，并将顶部 Dev 入口恢复为 dev.hachile.org，同步中英文和手机版。': 'Replaced Home’s two hero buttons with Terminal Me linking to terminal.hachile.org and restored the top Dev shortcut to dev.hachile.org on Chinese, English, and mobile pages.',
   '站群命令行终端上线': 'Hachile Terminal launched',
