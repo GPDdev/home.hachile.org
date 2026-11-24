@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Dev 补充循济官网与交流群': 'TongjiTap website and QQ group added to Dev',
+  '为 dev.hachile.org 的循济 TongjiTap 项目加入 tap.hachile.org 官网入口和 QQ 交流群 934139029，同步中英文展示并刷新全部项目的 GitHub Star 排序。': 'Added the official website at tap.hachile.org and QQ group 934139029 to the TongjiTap project on dev.hachile.org, in both languages, and refreshed GitHub star rankings for all projects.',
   '循济 TongjiTap 官网发布': 'TongjiTap app website launched',
   '在 tap.hachile.org 查看循济的四个 Android 界面、下载正式版 APK，并查阅点击编排、音乐调速和 Wi-Fi 切换的使用指南。': 'Preview the four Android screens at tap.hachile.org, download the release APK, and find guides to tap sequences, music playback speed, and Wi-Fi switching.',
   '首页加入 Terminal Me 按钮': 'Terminal Me button added to Home',
