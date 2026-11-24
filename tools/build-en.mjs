@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '首页加入 Terminal Me 按钮': 'Terminal Me button added to Home',
+  '将 Home 首页两个引导按钮合并为指向 terminal.hachile.org 的 Terminal Me，并将顶部 Dev 入口恢复为 dev.hachile.org，同步中英文和手机版。': 'Replaced Home’s two hero buttons with Terminal Me linking to terminal.hachile.org and restored the top Dev shortcut to dev.hachile.org on Chinese, English, and mobile pages.',
   '站群命令行终端上线': 'Hachile Terminal launched',
   '在 terminal.hachile.org 用 Linux 风格命令浏览站点目录、阅读公开文章和项目、跨站搜索正文，并打开原站与媒体链接。': 'Browse the site directory, read articles and projects, search across sites, and open original pages and media with Linux-style commands at terminal.hachile.org.',
   'Dev 收录 hanhua 汉化工具': 'hanhua added to Dev',
