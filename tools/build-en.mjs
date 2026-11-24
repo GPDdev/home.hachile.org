@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '国豪野史扩写与八一风波收录': 'Guohao histories expanded with the August 1 group dispute',
+  '扩写 ghc.hachile.org 的33篇现有野史，补充时间节点、经过与史料边界；依据匿名化群聊新增八一新生群风波，区分原群转发、反串与道歉文本的传播。': 'Expanded all 33 existing campus stories on ghc.hachile.org with timelines, fuller accounts and evidence limits. Added the August 1 new-student group dispute from anonymized chat records, distinguishing forwarded messages, role-playing and the circulation of an apology.',
   'Dev 补充循济官网与交流群': 'TongjiTap website and QQ group added to Dev',
   '为 dev.hachile.org 的循济 TongjiTap 项目加入 tap.hachile.org 官网入口和 QQ 交流群 934139029，同步中英文展示并刷新全部项目的 GitHub Star 排序。': 'Added the official website at tap.hachile.org and QQ group 934139029 to the TongjiTap project on dev.hachile.org, in both languages, and refreshed GitHub star rankings for all projects.',
   '循济 TongjiTap 官网发布': 'TongjiTap app website launched',
