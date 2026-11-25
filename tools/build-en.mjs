@@ -1,6 +1,9 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Hachile 站群运行状态页上线': 'Hachile network status page launched',
+  '在 status.hachile.org 查看各站点的可访问性、最近检查时间和故障记录，也可以浏览 Hachile 的树形站点目录、宗旨和更新日志。': 'Visit status.hachile.org to see which sites are reachable, when each was last checked, and past incidents. The new site also hosts the Hachile directory, project principles and changelog.',
+  '站群运行状态、目录与更新日志': 'Network status, directory and changelog',
   "同济野史增补百则校园掌故": "Tongji Wild adds 100 campus stories",
   "同济野史新增 100 篇校园轶事，收录吴淞时期的学生生活、四平路的小邮局和学生自制的网络作品，每篇附有来源和置信度。": "The new stories cover student life in Wusong, the little post office on Siping Road, and online projects created by students. Each story cites its sources and includes a confidence rating.",
   '云中城上线': 'Cloudsdale opens',
