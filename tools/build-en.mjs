@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "同济野史新增同舟共济会群号": "Tongji Wild lists the Tongzhou Gongji Hui QQ group",
+  "在同济野史各页底部可查看“同济大学校史、精神与文化交流群 同舟共济会QQ群1101135584”。": "Every Tongji Wild page now lists QQ group 1101135584 for Tongzhou Gongji Hui, a community for discussing Tongji University’s history, spirit and culture.",
   '同济校园活动与竞赛日历上线': 'Tongji campus events and competition calendar launched',
   '在 events.hachile.org 按学院查询竞赛与奖学金评审依据，查看校园活动和报名、比赛时间，收藏日程或订阅日历。': 'Find competition and scholarship criteria by college at events.hachile.org, check campus events and deadlines, save dates or subscribe to the calendar.',
   "走进天蓝晨风的云中城小屋": "Step inside Skyblue’s Cloudsdale cottage",
