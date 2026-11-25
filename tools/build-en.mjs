@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Dev 收录四个新项目': 'Four new projects added to Dev',
+  '在 dev.hachile.org 加入 AI 视频课堂、同济野史、AGI Relay 和序铃 DayChime，补充双语介绍、配图与可用入口，并刷新 18 个项目的 GitHub Star 排序。': 'Added AI Video Classroom, Tongji Wild History, AGI Relay and DayChime to dev.hachile.org, with bilingual descriptions, artwork and available links. Refreshed GitHub star rankings for all 18 projects.',
   'Hachile 站群运行状态页上线': 'Hachile network status page launched',
   '在 status.hachile.org 查看各站点的可访问性、最近检查时间和故障记录，也可以浏览 Hachile 的树形站点目录、宗旨和更新日志。': 'Visit status.hachile.org to see which sites are reachable, when each was last checked, and past incidents. The new site also hosts the Hachile directory, project principles and changelog.',
   '站群运行状态、目录与更新日志': 'Network status, directory and changelog',
