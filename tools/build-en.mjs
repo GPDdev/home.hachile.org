@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Gunpowder Lab 上线': 'Gunpowder Lab opens',
+  '在 1.hachile.org 了解 Gunpowder 的研究方向、开发项目和社群，也可以从作品介绍前往博客、图库与各个个人站点。': 'Explore Gunpowder’s research interests, software projects and communities at 1.hachile.org, and follow links to the blog, gallery and other personal sites.',
   '同济野史上线': 'Tongji Wild campus history archive launched',
   '在 tjwild.hachile.org 收录 19 篇同济校史与校园轶事，逐段列出 32 份中外来源，提供置信度说明、全文检索和校史大事记。': 'Published 19 Tongji histories and campus stories at tjwild.hachile.org, with 32 Chinese and international sources cited by section, evidence notes, full-text search and a timeline of major events.',
   '国豪野史扩写与八一风波收录': 'Guohao histories expanded with the August 1 group dispute',
