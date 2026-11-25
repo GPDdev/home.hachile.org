@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '同济野史上线': 'Tongji Wild campus history archive launched',
+  '在 tjwild.hachile.org 收录 19 篇同济校史与校园轶事，逐段列出 32 份中外来源，提供置信度说明、全文检索和校史大事记。': 'Published 19 Tongji histories and campus stories at tjwild.hachile.org, with 32 Chinese and international sources cited by section, evidence notes, full-text search and a timeline of major events.',
   '国豪野史扩写与八一风波收录': 'Guohao histories expanded with the August 1 group dispute',
   '扩写 ghc.hachile.org 的33篇现有野史，补充时间节点、经过与史料边界；依据匿名化群聊新增八一新生群风波，区分原群转发、反串与道歉文本的传播。': 'Expanded all 33 existing campus stories on ghc.hachile.org with timelines, fuller accounts and evidence limits. Added the August 1 new-student group dispute from anonymized chat records, distinguishing forwarded messages, role-playing and the circulation of an apology.',
   'Dev 补充循济官网与交流群': 'TongjiTap website and QQ group added to Dev',
