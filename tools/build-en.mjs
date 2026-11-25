@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '云中城上线': 'Cloudsdale opens',
+  '在 cloud.hachile.org 探访云中城，认识蓝色小天马天蓝晨风，翻阅小马画册，逛逛常去的站点。': 'Explore Cloudsdale at cloud.hachile.org, meet Skyblue Mornbreeze, browse the blue pegasus’s art album, and visit favorite sites.',
   'Gunpowder Lab 上线': 'Gunpowder Lab opens',
   '在 1.hachile.org 了解 Gunpowder 的研究方向、开发项目和社群，也可以从作品介绍前往博客、图库与各个个人站点。': 'Explore Gunpowder’s research interests, software projects and communities at 1.hachile.org, and follow links to the blog, gallery and other personal sites.',
   '同济野史上线': 'Tongji Wild campus history archive launched',
