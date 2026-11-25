@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '同济校园活动与竞赛日历上线': 'Tongji campus events and competition calendar launched',
+  '在 events.hachile.org 按学院查询竞赛与奖学金评审依据，查看校园活动和报名、比赛时间，收藏日程或订阅日历。': 'Find competition and scholarship criteria by college at events.hachile.org, check campus events and deadlines, save dates or subscribe to the calendar.',
   "走进天蓝晨风的云中城小屋": "Step inside Skyblue’s Cloudsdale cottage",
   "在 cloud.hachile.org 用鼠标、方向键或触屏环顾 3D 小屋。点选天蓝晨风、画作或信件，可以打开角色名片、画册或云端信箱。": "Look around the 3D cottage at cloud.hachile.org with a mouse, arrow keys, or a touchscreen. Select Skyblue, the artwork, or the letter to open the profile, sketchbook, or mailbox.",
   'Dev 收录四个新项目': 'Four new projects added to Dev',
