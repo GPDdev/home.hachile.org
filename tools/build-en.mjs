@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "同济野史改版为专题阅读": "Tongji Wild introduces thematic reading",
+  "以迁校与旧址、食住与通信、社团与舞台、课堂与街坊四栏重编同济野史，长文逐段列出来源，可从章节回查事件与原始记录。": "Four sections explore campus moves and former sites, everyday life and communication, clubs and the stage, and classrooms and neighborhoods. Each paragraph cites its sources, and each section links to related events and original records.",
   "同济野史新增同舟共济会群号": "Tongji Wild lists the Tongzhou Gongji Hui QQ group",
   "在同济野史各页底部可查看“同济大学校史、精神与文化交流群 同舟共济会QQ群1101135584”。": "Every Tongji Wild page now lists QQ group 1101135584 for Tongzhou Gongji Hui, a community for discussing Tongji University’s history, spirit and culture.",
   '同济校园活动与竞赛日历上线': 'Tongji campus events and competition calendar launched',
