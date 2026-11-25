@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "走进天蓝晨风的云中城小屋": "Step inside Skyblue’s Cloudsdale cottage",
+  "在 cloud.hachile.org 用鼠标、方向键或触屏环顾 3D 小屋。点选天蓝晨风、画作或信件，可以打开角色名片、画册或云端信箱。": "Look around the 3D cottage at cloud.hachile.org with a mouse, arrow keys, or a touchscreen. Select Skyblue, the artwork, or the letter to open the profile, sketchbook, or mailbox.",
   'Dev 收录四个新项目': 'Four new projects added to Dev',
   '在 dev.hachile.org 加入 AI 视频课堂、同济野史、AGI Relay 和序铃 DayChime，补充双语介绍、配图与可用入口，并刷新 18 个项目的 GitHub Star 排序。': 'Added AI Video Classroom, Tongji Wild History, AGI Relay and DayChime to dev.hachile.org, with bilingual descriptions, artwork and available links. Refreshed GitHub star rankings for all 18 projects.',
   'Hachile 站群运行状态页上线': 'Hachile network status page launched',
