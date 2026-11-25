@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "同济野史新增六篇学生与校园专题": "Tongji Wild publishes six histories of student life and campus disputes",
+  "新增三好坞、嘉定班车、医学院迁汉、两次学生运动和2022年盒饭风波专题，按具体说法标注讲述者、出处与置信度，并增设三个题材入口。": "New essays trace Sanhaowu Garden, the Jiading bus, the medical school’s move to Wuhan, two student movements, and the 2022 campus meal dispute. Each account identifies its source and evidence grade. Readers can browse by subject.",
   "同济野史改版为专题阅读": "Tongji Wild introduces thematic reading",
   "以迁校与旧址、食住与通信、社团与舞台、课堂与街坊四栏重编同济野史，长文逐段列出来源，可从章节回查事件与原始记录。": "Four sections explore campus moves and former sites, everyday life and communication, clubs and the stage, and classrooms and neighborhoods. Each paragraph cites its sources, and each section links to related events and original records.",
   "同济野史新增同舟共济会群号": "Tongji Wild lists the Tongzhou Gongji Hui QQ group",
