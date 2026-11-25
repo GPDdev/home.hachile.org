@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "同济野史增补百则校园掌故": "Tongji Wild adds 100 campus stories",
+  "同济野史新增 100 篇校园轶事，收录吴淞时期的学生生活、四平路的小邮局和学生自制的网络作品，每篇附有来源和置信度。": "The new stories cover student life in Wusong, the little post office on Siping Road, and online projects created by students. Each story cites its sources and includes a confidence rating.",
   '云中城上线': 'Cloudsdale opens',
   '在 cloud.hachile.org 探访云中城，认识蓝色小天马天蓝晨风，翻阅小马画册，逛逛常去的站点。': 'Explore Cloudsdale at cloud.hachile.org, meet Skyblue Mornbreeze, browse the blue pegasus’s art album, and visit favorite sites.',
   'Gunpowder Lab 上线': 'Gunpowder Lab opens',
