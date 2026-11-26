@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "同济野史启用同舟共济会手写标识": "Tongji Wild adopts the Tongzhou Gongji Hui wordmark",
+  "同济野史的全站页首和浏览器标签页改用“同舟共济会”五字手写标识。": "The handwritten Tongzhou Gongji Hui wordmark now appears in every page header and in the browser tab.",
   '同济校园日历更名为 Tongji Events': 'The Tongji campus calendar is now Tongji Events',
   '在 events.hachile.org 可切换中文、英语、日语和德语，按学院查看竞赛与评奖依据，并以所选语言导出日程。': 'Use events.hachile.org in Chinese, English, Japanese or German to browse competitions and scholarship criteria by college and export events in your chosen language.',
   "Dev 收录活动日历与生辰邮局": "Events and Birthday Post added to Dev",
