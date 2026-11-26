@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  '同济校园日历更名为 Tongji Events': 'The Tongji campus calendar is now Tongji Events',
+  '在 events.hachile.org 可切换中文、英语、日语和德语，按学院查看竞赛与评奖依据，并以所选语言导出日程。': 'Use events.hachile.org in Chinese, English, Japanese or German to browse competitions and scholarship criteria by college and export events in your chosen language.',
   "Dev 收录活动日历与生辰邮局": "Events and Birthday Post added to Dev",
   "在 dev.hachile.org 加入 Hachile Events 同济活动日历和生辰邮局 Birthday Post，补充双语介绍与真实界面截图，并刷新 20 个项目的 GitHub Star 排序。": "Added Hachile Events and Birthday Post to dev.hachile.org, with bilingual descriptions and actual interface screenshots. Refreshed GitHub star rankings for all 20 projects.",
   'Tools 收录十个项目并重整分类': 'Tools adds ten projects and reorganizes the directory',
