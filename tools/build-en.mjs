@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  'Tools 收录十个项目并重整分类': 'Tools adds ten projects and reorganizes the directory',
+  '在 tools.hachile.org 加入 AI 视频课堂、同济野史、生辰邮局等十个项目的 GitHub 入口，将目录调整为五个栏目，并同步两处导航。': 'Added GitHub links for ten projects, including AI Video Classroom, Tongji Wild, and Birthday Post. Reorganized the directory into five categories and updated both navigation menus.',
   "同济野史新增六篇学生与校园专题": "Tongji Wild publishes six histories of student life and campus disputes",
   "新增三好坞、嘉定班车、医学院迁汉、两次学生运动和2022年盒饭风波专题，按具体说法标注讲述者、出处与置信度，并增设三个题材入口。": "New essays trace Sanhaowu Garden, the Jiading bus, the medical school’s move to Wuhan, two student movements, and the 2022 campus meal dispute. Each account identifies its source and evidence grade. Readers can browse by subject.",
   "同济野史改版为专题阅读": "Tongji Wild introduces thematic reading",
