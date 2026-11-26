@@ -1,6 +1,8 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const translations = {
+  "Dev 收录活动日历与生辰邮局": "Events and Birthday Post added to Dev",
+  "在 dev.hachile.org 加入 Hachile Events 同济活动日历和生辰邮局 Birthday Post，补充双语介绍与真实界面截图，并刷新 20 个项目的 GitHub Star 排序。": "Added Hachile Events and Birthday Post to dev.hachile.org, with bilingual descriptions and actual interface screenshots. Refreshed GitHub star rankings for all 20 projects.",
   'Tools 收录十个项目并重整分类': 'Tools adds ten projects and reorganizes the directory',
   '在 tools.hachile.org 加入 AI 视频课堂、同济野史、生辰邮局等十个项目的 GitHub 入口，将目录调整为五个栏目，并同步两处导航。': 'Added GitHub links for ten projects, including AI Video Classroom, Tongji Wild, and Birthday Post. Reorganized the directory into five categories and updated both navigation menus.',
   "同济野史新增六篇学生与校园专题": "Tongji Wild publishes six histories of student life and campus disputes",
